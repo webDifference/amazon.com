@@ -34,7 +34,7 @@
 <script type="text/javascript">
 
 var ue_hob=+new Date();
-var ue_id='CHFCKCE6AQ07EZF714BV',
+var ue_id='12H6NWZ7X73S3E3NQ96V',
 ue_csm = window,
 ue_err_chan = 'jserr-rw',
 ue = {};
@@ -47,8 +47,8 @@ pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;setInterval(functio
 
 ue.stub(ue,"event");ue.stub(ue,"onSushiUnload");ue.stub(ue,"onSushiFlush");
 
-var ue_url='/gp/browse/uedata/nvp/unsticky/137-6620672-5464221/Browse/ntpoffrw',
-ue_sid='137-6620672-5464221',
+var ue_url='/gp/browse/uedata/nvp/unsticky/139-3771076-9439568/Browse/ntpoffrw',
+ue_sid='139-3771076-9439568',
 ue_mid='ATVPDKIKX0DER',
 ue_sn='www.amazon.com',
 ue_furl='fls-na.amazon.com',
@@ -56,7 +56,7 @@ ue_surl='https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
 ue_navtiming=1,
 ue_fcsn=1,
 ue_isrw=true,
-ue_fpf='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:137-6620672-5464221:CHFCKCE6AQ07EZF714BV$uedata=s:',
+ue_fpf='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:139-3771076-9439568:12H6NWZ7X73S3E3NQ96V$uedata=s:',
 ue_qsl=2000,
 ue_rpl_ns=0,
 ue_orct=1,
@@ -92,10 +92,16 @@ e,a.ue.id=e,a.ue.fc_idx={},a.ue.viz=[])};a.uei=H;a.ueh=A;a.ues=f;a.uet=t;a.uex=E
 (function(b){var a=b.ue;a.cv={};a.cv.scopes={};a.count=function(c,b,d){var e={},f=a.cv;e.counter=c;e.value=b;e.t=a.d();d&&d.scope&&(f=a.cv.scopes[d.scope]=a.cv.scopes[d.scope]||{},e.scope=d.scope);if(void 0===b)return f[c];f[c]=b;c=0;d&&d.bf&&(c=1);a.clog&&0===c?a.clog(e,"csmcount",{bf:c}):a.log&&a.log(e,"csmcount",{c:1,bf:c})};a.count("baselineCounter2",1);a&&a.event&&(a.event({requestId:b.ue_id||"rid",server:b.ue_sn||"sn",obfuscatedMarketplaceId:b.ue_mid||"mid"},"csm","csm.CSMBaselineEvent.4"),
 a.count("nexusBaselineCounter",1,{bf:1}))})(ue_csm);
 
+(function(f,g,l){var k,r,n,e,s,p,t,u=["blur","focus","mouseenter","mouseleave"],v="click dblclick focusin focusout mousedown mouseup mouseover mouseout mousemove change submit touchstart touchend touchmove touchcancel keydown keyup keypress MSPointerDown pointerdown MSPointerUp pointerup MSPointerMove pointermove MSPointerCancel pointercancel MSPointerOver pointerenter MSPointerOut pointerleave".split(" ").concat(u),q=!1,m=[];"function"===typeof g.addEventListener&&"function"===typeof l.querySelectorAll&&
+(n=function(a){for(var d=[];a;)d.push(a),a=a.parentNode;return d},findInArray=function(a,d){var b=-1,c;for(c=0;c<d.length;c++)if(d[c]===a){b=c;break}return b},r=function(a){var d;a=n(a);for(var b,c,h=0;h<a.length;h++)if(c=a[h],(b=c.nodeName)&&b!==l.nodeName){b=b.toLowerCase();if(c.id)return b+"#"+c.id+(d?">"+d:"");(c=c.getAttribute("class"))&&(b=b+"."+c.split(" ").join("."));d=b+(d?">"+d:"")}return d},t=function(a){return a.replace(/[^\w.:@\-\/]/g,function(a){return"#"===a?"@":">"===a?"/":"_"})},
+p=function(a,d){var b,c;if(f.ue&&f.ue.count&&f.ueLogError)for(b=r(a),santizedPath=t(b),c="degraded"===d?"A UX degrading element has entered the viewport: "+b:"A "+d+" was not handled on element: "+b,f.ueLogError(Error(c),{logLevel:"ERROR",attribution:b,message:c}),b=["TNR","TNR:"+d,"TNR:"+santizedPath,"TNR:"+d+":"+santizedPath],e=0;e<b.length;e++)f.ue.count(b[e],(f.ue.count(b[e])||0)+1)},s=function(a){a=a.getBoundingClientRect();return a.top<a.bottom&&a.left<a.right&&0<=a.bottom&&a.top<=g.innerHeight&&
+0<=a.right&&a.left<=g.innerWidth},k=function(){q||(q=!0,setTimeout(function(){[].forEach.call(l.querySelectorAll("[data-ux-degraded]"),function(a){s(a)?0>findInArray(a,m)&&(m.push(a),p(a,"degraded")):m.splice(findInArray(a,m),1)});q=!1},250))},g.addEventListener("scroll",k),g.addEventListener("resize",k));k=function(a){var d=!1,b=0>findInArray(a,u);l.addEventListener(a,function(c){if(!d){d=!0;var h=[],e=b?n(c.target):[c.target],f,g,k;for(g=0;g<e.length;g++)f=e[g],f.getAttribute&&(k=f.getAttribute("data-ux-"+
+a)),(k||""===k)&&h.push(f);h.length?(c.ack=c.acknowledge=function(a){a=a||c.currentTarget;h.splice(findInArray(a,h),1)},setTimeout(function(){var b;for(b=0;b<h.length;b++)p(h[b],a);d=!1},250)):d=!1}},!0)};for(e=0;e<v.length;e++)k(v[e])})(ue_csm,window,document);
+
 var ue_hoe=+new Date();
 
 </script>
-<!-- 6gzbz2wrgcta6k9tivxhfeo1s39mtu6dzekw5zy4072ilhh5cu93y4b5lkx8l5cio -->
+<!-- mjy339xgeshbg6h2m4jbbruvngrn2qfku2d2cizwsiw757p3qz0il2i6y3na5auz5tel2nq33ird6awsoa9yhsfow03l9g48veox2m6gde7jqyzttn7 -->
 <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Amazon.com Page Not Found</title><style>html,body{padding:0;margin:0}img{border:0}#a{background:#232f3e;padding:11px 11px 11px 192px}#b{position:absolute;left:22px;top:12px}#c{position:relative;max-width:800px;padding:0 40px 0 0}#e,#f{height:35px;border:0;font-size:1em}#e{width:100%;margin:0;padding:0 10px;border-radius:4px 0 0 4px}#f{cursor:pointer;background:#febd69;font-weight:bold;border-radius:0 4px 4px 0;-webkit-appearance:none;position:absolute;top:0;right:0;padding:0 12px}@media(max-width:500px){#a{padding:55px 10px 10px}#b{left:6px}}#g{text-align:center;margin:30px 0}#g img{max-width:90%}#d{display:none}#d[src]{display:inline}</style><script type="text/javascript">
 
 (function(e,c){function h(b,a){f.push([b,a])}function g(b,a){if(b){var c=e.head||e.getElementsByTagName("head")[0]||e.documentElement,d=e.createElement("script");d.async="async";d.src=b;d.setAttribute("crossorigin","anonymous");a&&a.onerror&&(d.onerror=a.onerror);a&&a.onload&&(d.onload=a.onload);c.insertBefore(d,c.firstChild)}}function k(){ue.uels=g;for(var b=0;b<f.length;b++){var a=f[b];g(a[0],a[1])}ue.deffered=1}var f=[];c.ue&&(ue.uels=h,c.ue.attach&&c.ue.attach("load",k))})(document,window);
@@ -121,18 +127,10 @@ ue_csm.ue.stub(ue,"impression");
 
 </script>
 </head><body><div style='display:none;visibility:hidden;'>
-    <img src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:137-6620672-5464221:CHFCKCE6AQ07EZF714BV$uedata=s:%2Fgp%2Fbrowse%2Fuedata%2Fnvp%2Funsticky%2F137-6620672-5464221%2FBrowse%2Fntpoffrw%3Fstaticb%26id%3DCHFCKCE6AQ07EZF714BV%26pty%3DError%26spty%3DPageNotFound%26pti%3D:1000' />
+    <img src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:139-3771076-9439568:12H6NWZ7X73S3E3NQ96V$uedata=s:%2Fgp%2Fbrowse%2Fuedata%2Fnvp%2Funsticky%2F139-3771076-9439568%2FBrowse%2Fntpoffrw%3Fstaticb%26id%3D12H6NWZ7X73S3E3NQ96V%26pty%3DError%26spty%3DPageNotFound%26pti%3D:1000' />
 
 
 </div>
-<script type='text/javascript'>
-(function(f,g,l){var k,r,n,e,s,p,t,u=["blur","focus","mouseenter","mouseleave"],v="click dblclick focusin focusout mousedown mouseup mouseover mouseout mousemove change submit touchstart touchend touchmove touchcancel keydown keyup keypress MSPointerDown pointerdown MSPointerUp pointerup MSPointerMove pointermove MSPointerCancel pointercancel MSPointerOver pointerenter MSPointerOut pointerleave".split(" ").concat(u),q=!1,m=[];"function"===typeof g.addEventListener&&"function"===typeof l.querySelectorAll&&
-(n=function(a){for(var d=[];a;)d.push(a),a=a.parentNode;return d},findInArray=function(a,d){var b=-1,c;for(c=0;c<d.length;c++)if(d[c]===a){b=c;break}return b},r=function(a){var d;a=n(a);for(var b,c,h=0;h<a.length;h++)if(c=a[h],(b=c.nodeName)&&b!==l.nodeName){b=b.toLowerCase();if(c.id)return b+"#"+c.id+(d?">"+d:"");(c=c.getAttribute("class"))&&(b=b+"."+c.split(" ").join("."));d=b+(d?">"+d:"")}return d},t=function(a){return a.replace(/[^\w.:@\-\/]/g,function(a){return"#"===a?"@":">"===a?"/":"_"})},
-p=function(a,d){var b,c;if(f.ue&&f.ue.count&&f.ueLogError)for(b=r(a),santizedPath=t(b),c="degraded"===d?"A UX degrading element has entered the viewport: "+b:"A "+d+" was not handled on element: "+b,f.ueLogError(Error(c),{logLevel:"ERROR",attribution:b,message:c}),b=["TNR","TNR:"+d,"TNR:"+santizedPath,"TNR:"+d+":"+santizedPath],e=0;e<b.length;e++)f.ue.count(b[e],(f.ue.count(b[e])||0)+1)},s=function(a){a=a.getBoundingClientRect();return a.top<a.bottom&&a.left<a.right&&0<=a.bottom&&a.top<=g.innerHeight&&
-0<=a.right&&a.left<=g.innerWidth},k=function(){q||(q=!0,setTimeout(function(){[].forEach.call(l.querySelectorAll("[data-ux-degraded]"),function(a){s(a)?0>findInArray(a,m)&&(m.push(a),p(a,"degraded")):m.splice(findInArray(a,m),1)});q=!1},250))},g.addEventListener("scroll",k),g.addEventListener("resize",k));k=function(a){var d=!1,b=0>findInArray(a,u);l.addEventListener(a,function(c){if(!d){d=!0;var h=[],e=b?n(c.target):[c.target],f,g,k;for(g=0;g<e.length;g++)f=e[g],f.getAttribute&&(k=f.getAttribute("data-ux-"+
-a)),(k||""===k)&&h.push(f);h.length?(c.ack=c.acknowledge=function(a){a=a||c.currentTarget;h.splice(findInArray(a,h),1)},setTimeout(function(){var b;for(b=0;b<h.length;b++)p(h[b],a);d=!1},250)):d=!1}},!0)};for(e=0;e<v.length;e++)k(v[e])})(ue_csm,window,document);
-
-</script>
 <a href="/"><img id="b" src="https://images-na.ssl-images-amazon.com/images/G/01/error/logo._TTD_.png" alt="Amazon.com"></a><form id="a" accept-charset="utf-8" action="/s" method="GET" role="search"><div id="c"><input id="e" name="field-keywords" placeholder="Search"><input id="f" type="submit" value="Go"></div></form><div id="g"><div><a href="/"><img src="https://images-na.ssl-images-amazon.com/images/G/01/error/title._TTD_.png" alt="Sorry! We couldn&#39;t find that page. Try searching or go to Amazon&#39;s home page."></a></div><a href="/dogsofamazon" target="_blank"><img id="d" alt="Dogs of Amazon"></a><script>document.getElementById("d").src="https://images-na.ssl-images-amazon.com/images/G/01/error/"+(Math.floor(Math.random()*43)+1)+"._TTD_.jpg";</script></div><script type='text/javascript'>
 (function(g,h){function d(a,d){var b={};if(!e||!f)try{var c=h.sessionStorage;c?a&&("undefined"!==typeof d?c.setItem(a,d):b.val=c.getItem(a)):f=1}catch(g){e=1}e&&(b.e=1);return b}var b=g.ue||{},a="",f,e,c,a=d("csmtid");f?a="NA":a.e?a="ET":(a=a.val,a||(a=b.oid||"NI",d("csmtid",a)),c=d(b.oid),c.e||(c.val=c.val||0,d(b.oid,c.val+1)),b.ssw=d);b.tabid=a})(ue_csm,window);
 
@@ -162,10 +160,10 @@ var ue_pty='Error', ue_spty='PageNotFound', ue_pti='';
 
 </script>
 
-<a href='/gp/browse/uedata/nvp/unsticky/137-6620672-5464221/Browse/ntpoffrw?tepes=1&amp;id=CHFCKCE6AQ07EZF714BV'>v</a>
+<a href='/gp/browse/uedata/nvp/unsticky/139-3771076-9439568/Browse/ntpoffrw?tepes=1&amp;id=12H6NWZ7X73S3E3NQ96V'>v</a>
 <noscript>
-     <img src='/gp/browse/uedata/nvp/unsticky/137-6620672-5464221/Browse/ntpoffrw?noscript&amp;id=CHFCKCE6AQ07EZF714BV&amp;pty=Error&amp;spty=PageNotFound&amp;pti=' />
-     <img src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:137-6620672-5464221:CHFCKCE6AQ07EZF714BV$uedata=s:%2Fgp%2Fbrowse%2Fuedata%2Fnvp%2Funsticky%2F137-6620672-5464221%2FBrowse%2Fntpoffrw%3Fnoscript%26id%3DCHFCKCE6AQ07EZF714BV%26pty%3DError%26spty%3DPageNotFound%26pti%3D:2000' />
+     <img src='/gp/browse/uedata/nvp/unsticky/139-3771076-9439568/Browse/ntpoffrw?noscript&amp;id=12H6NWZ7X73S3E3NQ96V&amp;pty=Error&amp;spty=PageNotFound&amp;pti=' />
+     <img src='//fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:139-3771076-9439568:12H6NWZ7X73S3E3NQ96V$uedata=s:%2Fgp%2Fbrowse%2Fuedata%2Fnvp%2Funsticky%2F139-3771076-9439568%2FBrowse%2Fntpoffrw%3Fnoscript%26id%3D12H6NWZ7X73S3E3NQ96V%26pty%3DError%26spty%3DPageNotFound%26pti%3D:2000' />
 
 </noscript>
 </div>
