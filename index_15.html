@@ -1,1546 +1,549 @@
-<!DOCTYPE html>
-<html class="desktop">
 
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>
-Goodreads — Share book recommendations with your friends, join book clubs, answer trivia
-</title>
 
 
-    <script type="text/javascript"> var ue_t0=window.ue_t0||+new Date();
- </script>
-  <script type="text/javascript">
-    (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
+<script src="https://ssl.images-createspace.com/csp/v480797615/Common/js/urchin/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* <![CDATA[ */ 
+urchinTracker();
 
-    if (window.ue && window.ue.tag) { window.ue.tag('home:index:signed_out', ue.main_scope);window.ue.tag('home:index:signed_out:desktop', ue.main_scope); }
-  </script>
-
-
-
-          <script type="text/javascript">
-        if (window.Mobvious === undefined) {
-          window.Mobvious = {};
-        }
-        window.Mobvious.device_type = 'desktop';
-        </script>
+/* ]]> */
+</script> 
 
 
-  
-<script src="https://s.gr-assets.com/assets/webfontloader-5438aec66887d6d561289f181d0195ca.js"></script>
-<script>
-//<![CDATA[
-
-  WebFont.load({
-    classes: false,
-    custom: {
-      families: ["Lato:n4,n7,i4", "Merriweather:n4,n7,i4"],
-      urls: ["https://s.gr-assets.com/assets/gr/fonts-e256f84093cc13b27f5b82343398031a.css"]
-    }
-  });
-
-//]]>
-</script>
-
-  <link rel="stylesheet" media="all" href="https://s.gr-assets.com/assets/goodreads-4ce95b8061e994c2275aa9085c09d716.css" />
-<!--[if lte IE 9]>
-<link rel="stylesheet" media="all" href="https://s.gr-assets.com/assets/goodreads_split2-11dc1fe6c5b2779425309ace0dcfb56d.css" />
-<![endif]-->
-    <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/shared_all_surfaces/pages/home/signed_out_hp-e4c6c2b29c6d27e6e4f04db3ca826b82.css" />
-  <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/gr/pages/home/signed_out_hp-13e1eae680f0cd4513cb2a1c9df15d9a.css" />
-
-
-  <!--[if lt IE 9]>
-    <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/ie-243e73b5c2539766a7d02b37fdf277f8.css" />
-  <![endif]-->
-
-  <!--[if lt IE 8]>
-    <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images_ie-5b0cc205c33756d8e7e84ce5b8be28e3.css" />
-  <![endif]-->
-
-  <!--[if gte IE 8]><!-->
-  <link rel="stylesheet" media="screen" href="https://s.gr-assets.com/assets/common_images-67dd60a681af04727cf7d18f5c5ba498.css" />
-  <!--<![endif]-->
-
-  <script src="https://s.gr-assets.com/assets/desktop/libraries-5f4c721c8cce991276028944f145f211.js"></script>
-  <script src="https://s.gr-assets.com/assets/application-8d3c5b62174c543ab5996aeaa37b3633.js"></script>
-
-    <script>
-  //<![CDATA[
-    var googletag = googletag || {};
-    googletag.cmd = googletag.cmd || [];
-    (function() {
-      var gads = document.createElement("script");
-      gads.async = true;
-      gads.type = "text/javascript";
-      var useSSL = "https:" == document.location.protocol;
-      gads.src = (useSSL ? "https:" : "http:") +
-      "//www.googletagservices.com/tag/js/gpt.js";
-      var node = document.getElementsByTagName("script")[0];
-      node.parentNode.insertBefore(gads, node);
-    })();
-    // page settings
-  //]]>
-</script>
-<script>
-  //<![CDATA[
-    googletag.cmd.push(function() {
-      googletag.pubads().setTargeting("sid", "575b43ff077146be55e314419e51df20");
-    googletag.pubads().setTargeting("grsession", "575b43ff077146be55e314419e51df20");
-    googletag.pubads().setTargeting("signedin", "false");
-    googletag.pubads().setTargeting("author", []);
-      googletag.pubads().enableAsyncRendering();
-      googletag.pubads().enableSingleRequest();
-      googletag.pubads().collapseEmptyDivs(true);
-      googletag.pubads().disableInitialLoad();
-      googletag.enableServices();
-    });
-  //]]>
-</script>
-<script>
-  //<![CDATA[
-    ! function(a9, a, p, s, t, A, g) {
-      if (a[a9]) return;
-    
-      function q(c, r) {
-        a[a9]._Q.push([c, r])
-      }
-      a[a9] = {
-      init: function() {
-        q("i", arguments)
-      },
-      fetchBids: function() {
-        q("f", arguments)
-      },
-      setDisplayBids: function() {},
-        _Q: []
-      };
-      A = p.createElement(s);
-      A.async = !0;
-      A.src = t;
-      g = p.getElementsByTagName(s)[0];
-      g.parentNode.insertBefore(A, g)
-    }("apstag", window, document, "script", "//c.amazon-adsystem.com/aax2/apstag.js");
-    
-    apstag.init({
-      pubID: '3211', adServer: 'googletag', bidTimeout: 4e3
-    });
-  //]]>
-</script>
+<title>CreateSpace: Self Publishing and Free Distribution for Books, CD, DVD</title>
 
 
 
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="5ji5xKEN6D3SLo2SA3CzmxErU70t92Fz9ShYVxPKkCbI0vLpwulylg1bttTZ0XpIdNZ77giYSYgM0z/z8Hu5lA==" />
-
-  <meta name="request-id" content="YVJYARSRCMZNFYRXVTMP" />
-
-      <link rel="canonical" href="https://www.goodreads.com/" />
-
-  <script src="https://s.gr-assets.com/assets/react_client_side/external_dependencies-87d4e460d8.js"></script>
-<script src="https://s.gr-assets.com/assets/react_client_side/site_header-cb820b2396.js"></script>
-<script src="https://s.gr-assets.com/assets/react_ujs-d9fd29be94e810d36e13f90d5c480c64.js"></script>
 
 
-  <script>
-  //<![CDATA[
-    if (typeof isShowingBuyableFeatures === 'undefined' || isShowingBuyableFeatures()) {
-      googletag.cmd.push(function() {
-        googletag.defineSlot("/4215/goodr.home.top.out.300x250", [300, 250], "div-gpt-ad-eb7b32f7c6")
-                 .addService(googletag.pubads()).setCollapseEmptyDiv(true);
-        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-          if (event.slot.getSlotId().getDomId() == "div-gpt-ad-eb7b32f7c6") {
-            var attrs = $gr.shared.dfpAd.imageAdAttrs();
-            attrs.dfpEvent = event;
-            attrs.adDeviceType = "desktop";
-            attrs.pmetImpressionTrackUrl = "https://www.goodreads.com/dfp/impression";
-            attrs.pmetClickTrackUrl = "https://www.goodreads.com/dfp/click";
-            $gr.shared.dfpAd.attachTo("#div-gpt-ad-eb7b32f7c6", attrs);
-    
-            if (false && document.getElementById("div-gpt-ad-eb7b32f7c6").style.display != "none") {
-              var css = document.createElement("link");
-              css.rel  = 'stylesheet';
-              css.type = 'text/css';
-              css.href = '/assets/ad_skins.css';
-              css.media = 'all';
-              document.getElementsByTagName('head')[0].appendChild(css);
-            }
-          }
-        });
-      });
-    }
-  //]]>
-</script>
-<script>
-  //<![CDATA[
-    if (typeof isShowingBuyableFeatures === 'undefined' || isShowingBuyableFeatures()) {
-      googletag.cmd.push(function() {
-        googletag.defineSlot("/4215/goodr.home.out.cb.300x250", [300, 250], "div-gpt-ad-a8df698eee")
-                 .addService(googletag.pubads()).setCollapseEmptyDiv(true);
-        googletag.pubads().addEventListener('slotRenderEnded', function(event) {
-          if (event.slot.getSlotId().getDomId() == "div-gpt-ad-a8df698eee") {
-            var attrs = $gr.shared.dfpAd.imageAdAttrs();
-            attrs.dfpEvent = event;
-            attrs.adDeviceType = "desktop";
-            attrs.pmetImpressionTrackUrl = "https://www.goodreads.com/dfp/impression";
-            attrs.pmetClickTrackUrl = "https://www.goodreads.com/dfp/click";
-            $gr.shared.dfpAd.attachTo("#div-gpt-ad-a8df698eee", attrs);
-    
-            if (false && document.getElementById("div-gpt-ad-a8df698eee").style.display != "none") {
-              var css = document.createElement("link");
-              css.rel  = 'stylesheet';
-              css.type = 'text/css';
-              css.href = '/assets/ad_skins.css';
-              css.media = 'all';
-              document.getElementsByTagName('head')[0].appendChild(css);
-            }
-          }
-        });
-      });
-    }
-  //]]>
-</script>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/sitewide-min.css" /><!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/sitewideIE-min.css" /><![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/sitewideIE7-min.css" /><script defer src="https://ssl.images-createspace.com/csp/v480797615/Common/js/ie/ie_disable.js" type="text/javascript"></script><![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/sitewideIE6-min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/home-min.css" /><!--[if IE]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/homeIE-min.css" /><![endif]-->
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/homeIE7-min.css" /><![endif]-->
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Special/Css/homeIE6-min.css" /><![endif]-->
 
-
-  
-  
-  
-
-  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Goodreads">
-
-    <script>
-  //<![CDATA[
-    var GoodreadsAnalytics = GoodreadsAnalytics || {};
-    var _gaq = _gaq || [];
-    
-    GoodreadsAnalytics.push = function () {
-      _gaq.push.apply(_gaq, arguments);
-    }
-    
-    GoodreadsAnalytics.push(['_setAccount', 'UA-968618-1']);
-    GoodreadsAnalytics.push(['_setCustomVar',
-      1,                        // Slot 1
-      'User Status',            // Custom variable name
-      'signed_out',  // Custom variable value: signed_out, signed_in,
-                                //   signed_in_facebook_connected, or
-                                //   goodreads_member_previously_signed_in
-      2                         // Visit-level scope, which means slot 1 will be
-                                //   free when the visit ends.
-    ]);
-    GoodreadsAnalytics.push(['_setCustomVar',
-      2,                        // Slot 2
-      'Device Type',            // Custom variable name
-      'desktop',         // Custom variable value: desktop, mobile, or
-                                //   tablet
-      2                         // Visit-level scope, which means slot 2 will be
-                                //   free when the visit ends.
-    ]);
-    GoodreadsAnalytics.push(['_trackPageview']);
-    
-    (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  //]]>
-</script>
+<link rel="shortcut icon" href="https://ssl.images-createspace.com/csp/Common/Icon.ico" />
 
 
 
-  <meta content='summary' name='twitter:card'>
-<meta content='@goodreads' name='twitter:site'>
-<meta content='Goodreads — Share book recommendations with your friends, join book clubs, answer trivia' name='twitter:title'>
-<meta content='See what your friends are reading' name='twitter:description'>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta name="description" content="CreateSpace provides free tools to help you self-publish and distribute your books, DVDs, CDs, and video downloads on-demand on Amazon.com and other channels" />
 
+<meta name="keywords" content="amazon book publishing, amazon createspace, amazon publishing, book publishing, book self publishing, create space, create space com, CreateSpace, createspace publishing, createspace.com, free book publishing, free book publishing, get book published, getting published, how to publish a book, writing a book, how to self-publish, on demand books, on demand publishing, sell your book, on-demand printing, online book publishing, online publishing, poetry publishing, print my book, print on demand, publish book online, publish my book, publish on demand, publishing a book, self publish, self publish book, self publishing, self publishing services, self publishing a book, publishing companies, book marketing, book publishing companies, self publishing companies, self publishing online, online book publishers, self-publish, self-publishing, self-publishing companies, author community, short run book printing, www.createspace.com, sell my book on amazon" />
 
-  <meta name="verify-v1" content="cEf8XOH0pulh1aYQeZ1gkXHsQ3dMPSyIGGYqmF53690=">
-  <meta name="google-site-verification" content="PfFjeZ9OK1RrUrKlmAPn_iZJ_vgHaZO1YQ-QlG2VsJs" />
-  <meta name="apple-itunes-app" content="app-id=355833469">
-    <meta property="og:url" content="https://www.goodreads.com/"/>
-  <meta property="og:description" content="Discover and share books you love on Goodreads, the world's largest site for readers and book recommendations!"/>
-  <meta property="og:title" content="Goodreads"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:site_name" content="Goodreads"/>
-  <meta property="og:image" content="https://s.gr-assets.com/assets/icons/goodreads_icon_1000x1000-aed808dec2093e20867b35cd56d9862d.png"/>
-  <meta property="fb:app_id" content="2415071772"/>
-
+   <meta name="security" content="public" />
+   <meta name="format" content="text/xhtml;charset=UTF-8">
+   <meta name="revisit-after" content="15 days" />
+   <meta name="Copyright" content="2010 copyright" />
+   <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+   <meta name="distribution" content="Global" />
+<script language="javascript" src="https://ssl.images-createspace.com/csp/v480797615/Special/Js/HomeProfile.js"></script>
 </head>
-
-
-<body id='signedOutHome' class="home">
-<div class="content">
-  
-
-    <div class='uitext' id='siteheader'>
-<div class='mainContent'>
-<div id='navBar'>
-<div id='logo'>
-<a href='/'>
-<img alt="Goodreads: Book reviews, recommendations, and discussion" src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png" />
-</a>
-</div>
-<div id='signInForm'>
+<body id="home">
 
 
 
 
-<form name="sign_in" id="sign_in" action="https://www.goodreads.com/user/sign_in?source=home" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AX0iDP0WdjTcqkCqZU7QYTCmz6OgfCcP6qeCNnyAk0Avl2khnvLsnwPfe+y/7xmyVVvn8IUTD/QTXOWSnzG68g==" />
-
-  <div class="formBox">
-    <input id="userSignInFormEmail" type="email" name="user[email]" placeholder="Email address" tabindex="1"><br>
-    <input type="checkbox" id="remember_me" name="remember_me" checked tabindex="3"><label for="remember_me" class="greyText">Remember me</label>
-  </div>
-
-  <div class="formBox">
-    <div style="position:relative">
-      <input value="" placeholder="Password" tabindex="2" type="password" name="user[password]" id="user_password" />
-      <label for="user_password" id="userPasswordLabel" class="greyText">Password</label>
-      <br>
-      <a class="greyText" id="userForgotPassword" rel="nofollow" href="/user/forgot_password">Forgot it?</a>
-    </div>
-  </div>
-
-  <div class="formBox">
-    <input type="submit" value="Sign in" tabindex="4" class="gr-button gr-button--dark" />
-    <input type="hidden" name="n" value="919772">
-  </div>
-
-</form>
-</div>
-</div>
-<div id='masthead'>
-<div id='headline'>
-<img alt="Meet your next favorite book." src="https://s.gr-assets.com/assets/home/headline-e2cd420e71737ff2815d09af5b65c4e4.png" />
-</div>
-<div id='newAccountBox'>
-<h2>
-New here? Create a free account!
-</h2>
-
-<form name="createForm" id="userSignupForm" autocomplete="off" action="https://www.goodreads.com/user/create" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6OCHJQbqLN2/trBwXlFYObYznL9PIUxpecgAbxfk9t3GCswIZQ62dmDDizaE8JHq08607GpOZJKAM2fL9FXfbw==" />
-  <div class="fieldPara">
-    <input placeholder="Name" type="text" name="user[first_name]" id="user_first_name" />
-  </div>
-
-  <div class="fieldPara">
-    <input placeholder="Email Address" type="email" name="user[email]" id="user_email" />
-  </div>
-
-    <div class="fieldPara">
-      <input id="user_password_signup" placeholder="Password" maxlength="128" size="128" type="password" name="user[password]" />
-      <label id="userPasswordSignupLabel" for="user_password_signup" class="greyText">Password</label>
-    </div>
-
-  <div class="fieldPara">
-    <div id="homePageSignupBlurb">
-      By clicking “Sign up”
-      I agree to the Goodreads
-      <a target="_blank" href="/about/terms">Terms of Service</a>
-      and confirm that I am at least 13 years old.
-    </div>
-
-    <input type="hidden" name="n" value="919772">
-    <input type="submit" name="next" class="button" value="Sign up">
-  </div>
-</form>
-</div>
-<div id='thirdPartySignUpBox'>
-<div id='signInUsingContent'>
-<span id='signInUsing'>
-or sign in using
-</span>
-<ul>
-<li class='thirdPartyLink'>
-<a class='fbjsLogin' data-redirect='/' href='#'>
-<img alt="Sign in with Facebook" title="Sign in with your Facebook account" src="https://s.gr-assets.com/assets/home/homepage_signin_facebook-99e862a1d6c0b1f359c0332006e16e10.png" />
-</a>
-</li>
-<li class='thirdPartyLink'>
-<a href="#" onclick="GR_Twitter.askToConnect(); return false;"><img alt="Sign in with Twitter" title="Sign in with your Twitter account" src="https://s.gr-assets.com/assets/home/homepage_signin_twitter-9922ba9506d10862d03a558f4424c026.png" /></a>
-</li>
-<li class='thirdPartyLink'>
-<a href="/google_accounts/sign_in"><img alt="Sign in with Google" title="Sign in with your Google account" src="https://s.gr-assets.com/assets/home/homepage_signin_google-4b119f254f4e8224b9a35ecb5f4fac55.png" /></a>
-</li>
-<li class='thirdPartyLink'>
-<a href="#" onclick="GR_Amazon.askToConnect(&#39;https://www.goodreads.com/amazon/login/redirect_to_amazon_login_url&#39;); return false;"><img alt="Sign in with Amazon" title="Sign in with your Amazon account" src="https://s.gr-assets.com/assets/home/homepage_signin_amazon-c6b72b6cb35e3c975a179cebad1e7ace.png" /></a>
-</li>
-</ul>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-  
-
-  <div class="mainContentContainer ">
-
-
-      
-
-    <div class="mainContent ">
-      
-      
-      <div class="mainContentFloat ">
-
-        <div id="flashContainer">
 
 
 
 
-</div>
-
-        
 
 
-<div class="leftContainer">
-  <div class="sellingPointBoxLeft">
-    <h2>Deciding what to read next?</h2>
-    <p class="u-defaultType">
-    You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.
-    </p>
-  </div>
-
-  <div class="sellingPointBoxRight">
-    <h2>What are your friends reading?</h2>
-    <p class="u-defaultType">
-      Chances are your friends are discussing their favorite
-      (and least favorite) books on Goodreads.
-    </p>
-  </div>
-
-    <div id="discoveryBox">
-      <h2>What will <em>you</em> discover?</h2>
-        <div class="discoveryBoxDiscovery sourceBooks4">
-          <div class="discoverySourceBooks">
-            <p class="discoverySourceActionText">Because Brian liked&hellip;</p>
-              <a href="/book/show/3450744-nudge"><img alt="Nudge by Richard H. Thaler" title="Nudge by Richard H. Thaler" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1348322381m/3450744.jpg" /></a>
-              <a href="/book/show/2776527-traffic"><img alt="Traffic by Tom Vanderbilt" title="Traffic by Tom Vanderbilt" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1320428955m/2776527.jpg" /></a>
-              <a href="/book/show/1713426.Predictably_Irrational"><img alt="Predictably Irrational by Dan Ariely" title="Predictably Irrational by Dan Ariely" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1255573980m/1713426.jpg" /></a>
-              <a href="/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time"><img alt="The Curious Incident of the Dog in the Night-Time by Mark Haddon" title="The Curious Incident of the Dog in the Night-Time by Mark Haddon" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1479863624m/1618.jpg" /></a>
-          </div>
 
 
-          <div class="discoveryBoxResultBook">
-            <p class="discoveryBoxResultActionText">He discovered:</p>
-            <p class="discoveryBoxResultDescriptors">Decision-making, Sociology, Marketing</p>
-            <a href="/book/show/11468377-thinking-fast-and-slow"><img alt="Thinking, Fast and Slow by Daniel Kahneman" title="Thinking, Fast and Slow by Daniel Kahneman" width="80" class="bookImgDiscovered" src="https://images.gr-assets.com/books/1317793965m/11468377.jpg" /></a>
-          </div>
+<script>
+/*<![CDATA[*/
+window.isOpen = true;
+submenusPopulated = false;
+/*]]>*/
+</script>
 
-          <div class="discoveryBoxArrow">
-            <img alt="&amp;rarr;" src="https://s.gr-assets.com/assets/home/discovery_arrow.png" />
-          </div>
-        </div>
-        <div class="discoveryBoxDiscovery sourceBooks4">
-          <div class="discoverySourceBooks">
-            <p class="discoverySourceActionText">Because ♥Meagan♥ liked&hellip;</p>
-              <a href="/book/show/929.Memoirs_of_a_Geisha"><img alt="Memoirs of a Geisha by Arthur Golden" title="Memoirs of a Geisha by Arthur Golden" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1409595968m/929.jpg" /></a>
-              <a href="/book/show/2728527-the-guernsey-literary-and-potato-peel-pie-society"><img alt="The Guernsey Literary and Potato Peel Pie Society by Mary Ann Shaffer" title="The Guernsey Literary and Potato Peel Pie Society by Mary Ann Shaffer" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1351979318m/2728527.jpg" /></a>
-              <a href="/book/show/43641.Water_for_Elephants"><img alt="Water for Elephants by Sara Gruen" title="Water for Elephants by Sara Gruen" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1494428973m/43641.jpg" /></a>
-              <a href="/book/show/4667024-the-help"><img alt="The Help by Kathryn Stockett" title="The Help by Kathryn Stockett" width="80" class="bookImgSimilar" src="https://images.gr-assets.com/books/1346100365m/4667024.jpg" /></a>
-          </div>
-
-
-          <div class="discoveryBoxResultBook">
-            <p class="discoveryBoxResultActionText">She discovered:</p>
-            <p class="discoveryBoxResultDescriptors">Historical Fiction, Book Club</p>
-            <a href="/book/show/3273.Moloka_i"><img alt="Moloka&#39;i by Alan Brennert" title="Moloka&#39;i by Alan Brennert" width="80" class="bookImgDiscovered" src="https://images.gr-assets.com/books/1441920261m/3273.jpg" /></a>
-          </div>
-
-          <div class="discoveryBoxArrow">
-            <img alt="&amp;rarr;" src="https://s.gr-assets.com/assets/home/discovery_arrow.png" />
-          </div>
-        </div>
-    </div>
-      <div id="browseBox">
-        <h2>Search and browse books</h2>
-
-        <div id="searchBox">
-          <div id='sitesearch'>
-<form id="headerSearchForm" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><div class='auto_complete_field_wrapper'>
-<input type="text" name="query" id="sitesearch_field" placeholder="Title / Author / ISBN" />
-<div id='sitesearch_autocomplete'></div>
-<img style="display: none" id="sitesearch_field_loading" class="loading" src="https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif" alt="Loading trans" />
-</div>
-<a class="submitLink" href="#" onclick="$j(&#39;#headerSearchForm&#39;).submit(); return false;"><img width="16" title="Title / Author / ISBN" alt="search" src="https://s.gr-assets.com/assets/layout/magnifying_glass-a2d7514d50bcee1a0061f1ece7821750.png" /></a>
-</form>
-</div>
-
-        </div>
-
-        <div class="u-defaultType">
-          
-      <div class="left" style="width: 25%">
-                  <a class="gr-hyperlink" href="/genres/art">Art</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/biography">Biography</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/business">Business</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/children-s">Children&#39;s</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/christian">Christian</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/classics">Classics</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/comics">Comics</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/cookbooks">Cookbooks</a><br>
-
+<div id="wrapper">
+   <div id="header">
+      <div id="logo"><a href="/"><img src="https://ssl.images-createspace.com/csp/Special/Img/logo-csp-no-tm.png" alt="CreateSpace - An Amazon Company" height=52 width=110 /></a></div>
+      <div id="end-nav">
+         <ul>
+            <li><a href="/en/community/index.jspa">Community</a></li>
+            <li><a href="/Help/Index.jsp">Help</a></li>
+            <li><a class="cart" href="/Workflow/cart.do?action=jump&jump.step=cart">Cart</a></li>
+         </ul>
       </div>
-      <div class="left" style="width: 25%">
-                  <a class="gr-hyperlink" href="/genres/ebooks">Ebooks</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/fantasy">Fantasy</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/fiction">Fiction</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/graphic-novels">Graphic Novels</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/historical-fiction">Historical Fiction</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/history">History</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/horror">Horror</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/memoir">Memoir</a><br>
-
+      <div class="clearer">
+      <div class="tabs-left-cap"></div>
+      <div class="nav_tabs">
+         <ul>
+            <li id="book_topNav">
+               <a  href="/Products/Book/" onclick="return menuClick('book')" onmouseover="menuOver('book');" onmouseout="menuOut('book')">Books</a>
+            </li>
+            <li id="music_topNav">
+               <a href="/Products/CD/" onclick="return menuClick('music')" onmouseover="menuOver('music');" onmouseout="menuOut('music')">Music</a>
+            </li>
+            <li id="film_topNav">
+               <a href="/Products/DVD/" onclick="return menuClick('film')" onmouseover="menuOver('film');" onmouseout="menuOut('film')">Film</a>
+            </li>
+            <li id="fpr_topNav">
+               <a href="/en/community/index.jspa" onclick="return menuClick('fpr')" onmouseover="menuOver('fpr');" onmouseout="menuOut('fpr')">Free Publishing Resources</a>
+            </li>
+            <li id="memberwork_topNav">
+               <a href="/en/community/community/member_showcase" onclick="return menuClick('memberwork');" onmouseover="menuOver('memberwork')" onmouseout="menuOut('memberwork')">Member Spotlight</a>
+            </li>
+            <li id="account_topNav">
+               <a class="last" style="background-image: none" href="/pub/member.dashboard.do" onclick="return menuClick('account');" onmouseover="menuOver('account')" onmouseout="menuOut('account')">My Account</a>
+            </li>
+         </ul>
       </div>
-      <div class="left" style="width: 25%">
-                  <a class="gr-hyperlink" href="/genres/music">Music</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/mystery">Mystery</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/non-fiction">Nonfiction</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/poetry">Poetry</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/psychology">Psychology</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/romance">Romance</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/science">Science</a><br>
-
-                  <a class="gr-hyperlink" href="/genres/science-fiction">Science Fiction</a><br>
-
+      <div class="tabs-right-cap"></div>
+   </div>
+   <div class="clearer">
+      <div class="subnav-left-cap"></div>
+      <div class="subnav">
+         <div id="tagline"><img src="https://ssl.images-createspace.com/csp/Special/Img/header/tagline-amazon-company.png"/></div>
+         
+            
+               <div id="sitesearch">
+                  <form id="sitesearch_form" name="sitesearch_form" action="/pub/simplesitesearch.search.do" method="get" autocomplete="off">
+                     <div id="sitesearch_send">
+                        <a href="#" onclick="searchButtonClicked(); return false">
+                           <img src="https://ssl.images-createspace.com/csp/Special/Img/header/sitesearch/magnify_glass.png"></img>
+                        </a>
+                     </div>
+                     <input id="sitesearch_query" name="sitesearch_query" type="text" onkeydown="searchKeyDown(event)" value=""/>
+                     
+                     
+                        
+                        
+                           
+                           
+                        
+                     
+                     <input id="sitesearch_type" name="sitesearch_type" type="hidden" value="SITE"/>
+                     <div id="sitesearch_select" class="sitesearch_select">
+                        <span id="sitesearch_selected" class="sitesearch_selected" onclick="searchDropDown.toggle();">Site</span>
+                        <div id="sitesearch_select_options" class="sitesearch_select_options" style="display: none">
+                           <span id="sitesearch_select_option_site" class="sitesearch_select_option" onclick="searchDropDown.select('SITE', 'Site'); updateSearchText();">Site</span>
+                           <span id="sitesearch_select_option_estore" class="sitesearch_select_option" onclick="searchDropDown.select('STORE', 'Store'); updateSearchText();">Store</span>
+                        </div>
+                     </div>
+                     <div style="clear:both;"></div>
+                  </form>
+               </div>
+            
+         
+	      
+		      <div id="login">
+               <a href="/Login.do">Log In</a>&nbsp;&nbsp;&nbsp;<a href="/Signup.jsp">Sign Up</a>
+		      </div>
+	      
       </div>
-      <div class="left" style="width: 25%">
-                  <a class="gr-hyperlink" href="/genres/self-help">Self Help</a><br>
+      <div class="subnav-right-cap"></div>
+   </div>
 
-                  <a class="gr-hyperlink" href="/genres/sports">Sports</a><br>
+   <div id="book_subMenu" class="subWrapper" style="display:none; position: absolute; left:162px; top: 75px;" onmouseover="menuOver('book')" onmouseout="menuOut('book')">
+      <div id="book_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="book_subMenuItems"></ul></div>
+   </div>
+   <div id="music_subMenu" class="subWrapper" style="display:none; position: absolute; left:205px; top: 75px" onmouseover="menuOver('music')" onmouseout="menuOut('music')">
+      <div id="music_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="music_subMenuItems"></ul></div>
+   </div>
+   <div id="film_subMenu" class="subWrapper" style="display:none; position:absolute; left:258px; top:75px" onmouseover="menuOver('film')" onmouseout="menuOut('film')">
+      <div id="film_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="film_subMenuItems"></ul></div>
+   </div>
+   <div id="fpr_subMenu" class="subWrapper" style="display:none; position:absolute; left:323px; top:75px" onmouseover="menuOver('fpr')" onmouseout="menuOut('fpr')">
+      <div id="fpr_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="fpr_subMenuItems"></ul></div>
+   </div>
+   <div id="memberwork_subMenu" class="subWrapper" style="display:none; position:absolute; left:515px; top:75px" onmouseover="menuOver('memberwork')" onmouseout="menuOut('memberwork')">
+      <div id="memberwork_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="memberwork_subMenuItems"></ul></div>
+   </div>
+   <div id="account_subMenu" class="subWrapper" style="display:none; position:absolute; left:545px; top:75px" onmouseover="menuOver('account')" onmouseout="menuOut('account')">
+      <div id="account_subMenuTop" class="subMenuTop"></div>
+      <div class="subMenu"><ul id="account_subMenuItems"></ul></div>
+   </div>
 
-                  <a class="gr-hyperlink" href="/genres/thriller">Thriller</a><br>
+<script type="text/javascript" src="https://ssl.images-createspace.com/csp/v480797615/Common/js/all-min.js"></script>
 
-                  <a class="gr-hyperlink" href="/genres/travel">Travel</a><br>
+   <script type="text/javascript" src="/Special/Js/menu_config.js.jsp?version=480797615"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+   populateSubmenus(menuitems);
+   
+	   
+	      createSearchText();
+	      createSearchDropDown();
+	   
+	
+/* ]]> */
+</script>
 
-                  <a class="gr-hyperlink" href="/genres/young-adult">Young Adult</a><br>
-
-                  <a class="gr-hyperlink" href="/genres">More genres</a>
-
-      </div>
-
-        </div>
-        <div class="u-clearBoth"></div>
-      </div>
-
-      <div class="featureTeaserBox u-clearBoth">
-        <h2>Quotes</h2>
-        <div class="featureTeaserBox__quotesBox">
-          <div id="quotes" class="featureTeaserBox__quotesBoxQuote">
-              <div>
-                
-    <a class="leftAlignedImage" href="/author/show/61105.Dr_Seuss">
-      <img alt="Dr. Seuss" src="https://images.gr-assets.com/authors/1193930952p2/61105.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Don't cry because it's over, smile because it happened.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/61105.Dr_Seuss">Dr. Seuss</a>
 </div>
 
+<link rel="stylesheet" type="text/css" href="https://ssl.images-createspace.com/csp/v480797615/Common/css/window.css" />
+<script type="text/javascript" src="https://ssl.images-createspace.com/csp/v480797615/Common/js/window.js"></script>
 
-<div class="quoteFooter">
+
+<!--[if IE]>
+<div id="unsupportedBrowserLBContent" style="display:none">
+   <h3 style="font-family:Arial,Helvetica,sans-serif">Did you know that your Internet Explorer is out of date?</h3>
+
+   We detected that you are using an outdated browser. Please upgrade your browser to continue using CreateSpace. Newer browsers allow you to safely use the CreateSpace website. A list of popular web browsers is provided below.<br><br>
+
+   <div id="browser_list" style="padding-left:10px;">
+      <a href="http://www.mozilla.com/firefox/">
+         <span id="browser_firefox" style="float: left; background: url('/Common/img/browser/background_browser.gif') no-repeat scroll left top transparent; cursor: pointer; width: 120px; height: 122px; margin: 0pt 10px 10px 0pt;">
+            <div id="icon_firefox" style="width: 100px; height: 100px; margin: 1px 10px; background: url('/Common/img/browser/browser_firefox.gif') no-repeat scroll left top transparent;"></div>
+            <div id="text_firefox" style="font-size: 0.8em; height: 18px; line-height: 17px; margin: 1px auto; width: 118px; text-align: center;">Firefox</div>
+         </span>
+      </a>
+      <a href="http://www.google.com/chrome">
+         <span id="browser_chrome" style="float: left; background: url('/Common/img/browser/background_browser.gif') no-repeat scroll left top transparent; cursor: pointer; width: 120px; height: 122px; margin: 0pt 10px 10px 0pt;">
+            <div id="icon_chrome" style="width: 100px; height: 100px; margin: 1px 10px; background: url('/Common/img/browser/browser_chrome.gif') no-repeat scroll left top transparent;"></div>
+            <div id="text_chrome" style="font-size: 0.8em; height: 18px; line-height: 17px; margin: 1px auto; width: 118px; text-align: center;">Chrome</div>
+         </span>
+      </a>
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie/">
+         <span id="browser_ie" style="float: left; background: url('/Common/img/browser/background_browser.gif') no-repeat scroll left top transparent; cursor: pointer; width: 120px; height: 122px; margin: 0pt 10px 10px 0pt;">
+            <div id="icon_ie" style="width: 100px; height: 100px; margin: 1px 10px; background: url('/Common/img/browser/browser_ie.gif') no-repeat scroll left top transparent;"></div>
+            <div id="text_ie" style="font-size: 0.8em; height: 18px; line-height: 17px; margin: 1px auto; width: 118px; text-align: center;">Internet Explorer</div>
+         </span>
+      </a>
+   </div>
+
+   <div style="margin-top:8px;">
+      Please contact us if you need additional help:<br>
+      Telephone: 1-206-922-0860 | Email: <a href="mailto:info@createspace.com">info@createspace.com</a>
+   </div>
 </div>
 
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1511992603p8/8630.jpg">
-      <img alt="I&#39;m selfish, impatient and a little insecure. I make mistakes, I am out of control" src="https://images.gr-assets.com/quotes/1511992603p2/8630.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/82952.Marilyn_Monroe">Marilyn Monroe</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
-      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1509973595p2/3565.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Be yourself; everyone else is already taken.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/3565.Oscar_Wilde">Oscar Wilde</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/9810.Albert_Einstein">
-      <img alt="Albert Einstein" src="https://images.gr-assets.com/authors/1429114964p2/9810.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/9810.Albert_Einstein">Albert Einstein</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/22302.Frank_Zappa">
-      <img alt="Frank Zappa" src="https://images.gr-assets.com/authors/1315160559p2/22302.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;So many books, so little time.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/22302.Frank_Zappa">Frank Zappa</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/5768330.Bernard_M_Baruch">
-      <img alt="Bernard M. Baruch" src="https://images.gr-assets.com/authors/1331977133p2/5768330.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/5768330.Bernard_M_Baruch">Bernard M. Baruch</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/1744830.William_W_Purkey">
-      <img alt="William W. Purkey" src="https://images.gr-assets.com/authors/1282396130p2/1744830.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;You've gotta dance like there's nobody watching,<br />Love like you'll never be hurt,<br />Sing like there's nobody listening,<br />And live like it's heaven on earth.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/1744830.William_W_Purkey">William W. Purkey</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/13755.Marcus_Tullius_Cicero">
-      <img alt="Marcus Tullius Cicero" src="https://images.gr-assets.com/authors/1197881416p2/13755.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;A room without books is like a body without a soul.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/13755.Marcus_Tullius_Cicero">Marcus Tullius Cicero</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/61105.Dr_Seuss">
-      <img alt="Dr. Seuss" src="https://images.gr-assets.com/authors/1193930952p2/61105.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;You know you're in love when you can't fall asleep because reality is finally better than your dreams.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/61105.Dr_Seuss">Dr. Seuss</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/259666.Mae_West">
-      <img alt="Mae West" src="https://images.gr-assets.com/authors/1198551937p2/259666.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;You only live once, but if you do it right, once is enough.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/259666.Mae_West">Mae West</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/5810891.Mahatma_Gandhi">
-      <img alt="Mahatma Gandhi" src="https://images.gr-assets.com/authors/1356810912p2/5810891.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Be the change that you wish to see in the world.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/5810891.Mahatma_Gandhi">Mahatma Gandhi</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/7715.Robert_Frost">
-      <img alt="Robert Frost" src="https://images.gr-assets.com/authors/1183232004p2/7715.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;In three words I can sum up everything I've learned about life: it goes on.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/7715.Robert_Frost">Robert Frost</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/1077326.J_K_Rowling">
-      <img alt="J.K. Rowling" src="https://images.gr-assets.com/authors/1510435123p2/1077326.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/1077326.J_K_Rowling">J.K. Rowling</a>,
-    <span id=quote_book_link_6>
-      <a class="authorOrTitle" href="/work/quotes/3046572">Harry Potter and the Goblet of Fire</a>
-    </span>
-    
-
-  
-<script type="text/javascript" charset="utf-8">
-//<![CDATA[  
-
-  function submitShelfLink(unique_id, book_id, shelf_id, shelf_name, submit_form, exclusive) {
-    var checkbox_id = 'shelf_name_' + unique_id + '_' + shelf_id;
-    var element = document.getElementById(checkbox_id)
-
-    var checked = element.checked
-    if (checked && exclusive) {
-      // can't uncheck a radio by clicking it!
-      return
-    }
-    if(document.getElementById("savingMessage")){
-      Element.show('savingMessage')
-    }
-    var element_id = 'shelfInDropdownName_' + unique_id + '_' + shelf_id;
-    Element.update(element_id, "saving...");
-    if (submit_form) {
-      Element.hide('shelfDropdown_' + unique_id)
-      var form = document.getElementById('addBookForm' + book_id)
-      if (form) {
-        form.shelf.value = shelf_name
-        form.onsubmit()
+<script type="text/javascript">
+/*<![CDATA[*/
+Dialog.info($("unsupportedBrowserLBContent").innerHTML, {
+   id: "unsupportedBrowser",
+   left: 282.5,
+   width: 410,
+   className: "window",
+   showEffect: Element.show,
+   hideEffect: Element.hide,
+   onBeforeShow: function(name) {
+      if (Prototype.Browser.IE) {
+         $(name).addClassName('csp_ie');
       }
-    }
-    else {
-      var action = checked ? 'remove' : ''
-      element.checked = !element.checked
-      new Ajax.Request('/shelf/add_to_shelf', {asynchronous:true, evalScripts:true, onSuccess:function(request){shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name)}, parameters:'book_id=' + book_id + '&name=' + shelf_name + '&a=' + action + '&authenticity_token=' + encodeURIComponent('gJsug5kLAfM3KhndGRBkc6pt41h89EY5yXYfxcN9BJE64VOI/H9MTleE3v8PgWZYpXsOkL/RC5n5dkpaWssQyQ==')})
-    }
-  }
-
-  function shelfSubmitted(request, book_id, checkbox_id, element_id, unique_id, shelf_name) {
-    Element.update('shelfListfalse_' + book_id, request.responseText)
-    afterShelfSave(checkbox_id, element_id, unique_id, shelf_name.escapeHTML())
-  }
-
-  function refreshGroupBox(group_id, book_id) {
-    new Ajax.Updater('addGroupBooks' + book_id + '', '/group/add_book_box', {asynchronous:true, evalScripts:true, onSuccess:function(request){refreshGroupBoxComplete(request, book_id);}, parameters:'id=' + group_id + '&book_id=' + book_id + '&refresh=true' + '&authenticity_token=' + encodeURIComponent('c69LLRh/SBJvCG3mdfTxJTpVJE2eYW/KVcqbOQrxq2PJ1TYmfQsFrw+mqsRjZfMONUPJhV1EImplys6mk0e/Ow==')})
-  }
-//]]>
+   }.bind(window, "unsupportedBrowser"),
+   onShow: function() { }
+});
+/* ]]> */
 </script>
+<![endif]-->
+
+<div id="page_body">
+<div id="startpage"><img src="https://ssl.images-createspace.com/csp/Special/Img/dot_trans.gif" height="1" width="760" alt="" /></div>
 
 
-<script>
-//<![CDATA[
-      var newTip = new Tip($('quote_book_link_6'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire?from_choice=false&amp;from_home_module=false\">Harry Potter and the Goblet of Fire (Harry Potter, #4)<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1077326.J_K_Rowling\">J.K. Rowling<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><\/span> 4.53 avg rating &mdash; 1,920,057 ratings<\/span>            &mdash; published 2000\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer6047983532666264408\">Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup. He wants to find out about the mysterious event that\'s supposed to take pla<\/span>\n  <span id=\"freeText6047983532666264408\" style=\"display:none\">Harry Potter is midway through his training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup. He wants to find out about the mysterious event that\'s supposed to take place at Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn\'t happened for a hundred years. He wants to be a normal, fourteen-year-old wizard. But unfortunately for Harry Potter, he\'s not normal - even by wizarding standards. \n\nAnd in his case, different can be deadly.\n--back cover<\/span>\n  <a data-text-id=\"6047983532666264408\" href=\"#\" onclick=\"swapContent($(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'1_book_6\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"UGlEb5nq7QR/h1Ajb7h2MyEHNof0kfgmBytVY71kWXzqEzlk/J6guR8plwF5KXQYLhHbTze0tYY3KwD8JNJNJA==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"1_book_6\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"LrmTH0BxbOn3cp17lxDX5VNxS8B5ih1SbhD27vvN/ieUw+4UJQUhVJfcWlmBgdXOXGemCLqvUPJeEKNxYnvqfw==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"1_book_6\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"6\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<div class=\'wtrShelfMenu\'>\n<ul class=\'wtrExclusiveShelves\'>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'to-read\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'currently-reading\'>\n<span class=\'progressTrigger\'>Currently Reading<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<li><button class=\'wtrExclusiveShelf\' name=\'name\' type=\'submit\' value=\'read\'>\n<span class=\'progressTrigger\'>Read<\/span>\n<img alt=\"saving…\" class=\"progressIndicator\" src=\"https://s.gr-assets.com/assets/loading-trans-ced157046184c3bc7c180ffbfc6825a4.gif\" />\n<\/button>\n<\/li>\n<\/ul>\n<\/div>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"6\" data-user-id=\"0\" data-submit-url=\"/review/rate/6?page_url=%2F&rate_books_page=false&stars_click=false&wtr_button_id=1_book_6\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
-      $('quote_book_link_6').observe('prototip:shown', function() {
-        if (this.up('#box')) {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
-        } else {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
-        }
-      });
-
-      newTip['wrapper'].addClassName('prototipAllowOverflow');
-
-        $('quote_book_link_6').observe('prototip:shown', function () {
-          $$('div.prototip').each(function (e) {
-            if ($('quote_book_link_6').hasClassName('ignored')) {
-              e.setStyle({'display': 'none'});
-              return;
-            }
-            e.setStyle({'overflow': 'visible'});
-          });
-        });
-      $('quote_book_link_6').observe('prototip:hidden', function () {
-        $$('span.elementTwo').each(function (e) {
-          if (e.getStyle('display') !== 'none') {
-            var lessLink = e.next();
-            swapContent(lessLink);
-          }
-        });
-      });
-
-//]]>
-</script>
-
-</div>
 
 
-<div class="quoteFooter">
-</div>
 
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="https://images.gr-assets.com/quotes/1387503187p8/10554.jpg">
-      <img alt="Friendship ... is born at the moment when one man says to another What! You" src="https://images.gr-assets.com/quotes/1387503187p2/10554.jpg" />
-</a>
-<div class="quoteText">
+		<div id="col_main">
+        	<div id="hero" class="authors">
+            	<div id="authors">
+                	<div class="main">
+                    	<h1 class="headline"><span>Publish your words, your way.</span></h1>
+                        <p class="description"><span>Our tools and services make it easy to complete your book and start selling to millions.</span></p>
+                        <a href="/Products/Book/" class="learnmore">Learn more</a>
+                    </div>
+                    <div class="action">
+                		<ul>
+                        	<li>
+                            	<h3>Start your free online setup now.</h3>
+                            	<p>Upload your files and use our free online tools.</p>
+                                <a href="https://tsw.createspace.com/getstarted/productselection"class="action">Start a title for free</a>
+                            </li>
+                            <li>
+                            	<h3>Get in touch with our publishing experts.</h3>
+                                <p>We can tailor a publishing solution just for you.</p>
+                                <a href="/pub/services.home.do?tab=PUBLISHING" class="action">Explore paid services</a>
+                        </ul>
+                        <div class="clearer"></div>
+                	</div>
+                </div><!-- end authors -->
+            	<div id="musicians">
+                	<div class="main">
+                        <h1 class="headline"><span>Tune in to millions of potential listeners.</span></h1>
+                        <p class="description-new"><span>Distribute your music on Amazon.com and other sales channels as an audio CD.</span></p>
 
-        &ldquo;Friendship ... is born at the moment when one man says to another "What! You too? I thought that no one but myself . . .&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/1069006.C_S_Lewis">C.S. Lewis</a>,
-    <span id=quote_book_link_30633>
-      <a class="authorOrTitle" href="/work/quotes/14816053">The Four Loves</a>
-    </span>
-    
+                        <a href="/Products/CD/" class="learnmore">Learn more about CDs</a>
+                    </div>
+                    <div class="action">
+                		<ul>
+                        	<li>
+                            	<h3>Start your free online setup now.</h3>
+                            	<p>Upload your files and use our free online tools.</p>
+                                <a href="https://tsw.createspace.com/getstarted/productselection"class="action">Start a title for free</a>
+                            </li>
+                        </ul>
+                        <div class="clearer"></div>
+                    </div>
+                </div><!-- end musicians -->
+                <div id="filmmakers">
+                	<div class="main">
+                        <h1 class="headline"><span>Broad distribution is part of the deal.</span></h1>
+                        <p class="description"><span>Distribute your film on Amazon.com and other sales channels as a DVD or video download.</span></p>
+                        <a href="/Products/DVD/" class="learnmore">Learn more about DVDs</a>
+                        <a href="/Products/VideoDownload/" class="learnmore">Learn more about Downloads</a>
+                    </div>
+                    <div class="action">
+                		<ul>
+                        	<li>
+                            	<h3>Start your free online setup now.</h3>
+                            	<p>Upload your files and use our free online tools.</p>
+                                <a href="https://tsw.createspace.com/getstarted/productselection"class="action">Start a title for free</a>
+                            </li>
+                        </ul>
+                        <div class="clearer"></div>
+                    </div>
+                </div><!-- end filmmakers -->
+                    <div id="hero_nav_arrow"><img src="https://ssl.images-createspace.com/csp/Special/Img/homepage/announce_icon_top.png" width="49" height="10" id="announce_top" /></div>
+                    <div id="hero_nav">
+	                        <a href="#" onclick="javascript:document.getElementById('hero').className = 'authors'; return false;" id="authorlink">Authors</a>
+	                        <a href="#" onclick="javascript:document.getElementById('hero').className = 'musicians'; return false;" id="musicianlink">Musicians</a>
+    	                    <a href="#" onclick="javascript:document.getElementById('hero').className = 'filmmakers'; return false;" id="filmmakerlink">Filmmakers</a>
+                        <div id="announce">
+                        
+							
+							   
+                        	<img src="https://ssl.images-createspace.com/csp/Special/Img/homepage/announce_icon_bottom.png" width="49" height="39" id="announce_bottom" />
+                        	<span class="twoline">Not sure where to start? Our <a href="https://createspace.secure.force.com/PublishingAdvisor?refid=131313">Publishing Advisor Tool</a> can help!</span>
+							   
+							   
+							
+							
 
-
-<script>
-//<![CDATA[
-      var newTip = new Tip($('quote_book_link_30633'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/30633.The_Four_Loves?from_choice=false&amp;from_home_module=false\">The Four Loves<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/1069006.C_S_Lewis\">C.S. Lewis<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p3\"><\/span><\/span> 4.16 avg rating &mdash; 33,039 ratings<\/span>            &mdash; published 1960\n          <\/div>\n\n    <div class=\"addBookTipDescription\">\n      \n<span id=\"freeTextContainer6419081291282808241\">The Four Loves summarizes four kinds of human love--affection, friendship, erotic love, and the love of God. Masterful without being magisterial, this book\'s wise, gentle, candid reflections on the virtues and dangers of love draw on sources from Jan<\/span>\n  <span id=\"freeText6419081291282808241\" style=\"display:none\">The Four Loves summarizes four kinds of human love--affection, friendship, erotic love, and the love of God. Masterful without being magisterial, this book\'s wise, gentle, candid reflections on the virtues and dangers of love draw on sources from Jane Austen to St. Augustine. The chapter on charity (love of God) may be the best thing Lewis ever wrote about Christianity. Consider his reflection on Augustine\'s teaching that one must love only God, because only God is eternal, and all earthly love will someday pass away:  Who could conceivably begin to love God on such a prudential ground--because the security (so to speak) is better? Who could even include it among the grounds for loving? Would you choose a wife or a Friend--if it comes to that, would you choose a dog--in this spirit? One must be outside the world of love, of all loves, before one thus calculates.  His description of Christianity here is no less forceful and opinionated than in Mere Christianity or The Problem of Pain, but it is far less anxious about its reader\'s response--and therefore more persuasive than any of his apologetics. When he begins to describe the nature of faith, Lewis writes: &quot;Take it as one man\'s reverie, almost one man\'s myth. If anything in it is useful to you, use it; if anything is not, never give it a second thought.&quot; --Michael Joseph Gross<\/span>\n  <a data-text-id=\"6419081291282808241\" href=\"#\" onclick=\"swapContent($(this));; return false;\">...more<\/a>\n\n    <\/div>\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'2_book_30633\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"JmH+li6Q/NorZyfGaeQz+wu6XID+08kmymL/9UvNipycG4OdS+SxZ0vJ4OR/dTHQBKyxSD32hIb6Yqpq0nuexA==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"30633\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"2_book_30633\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"VZPQxnrqZLXh1b0MteQScd5T1ZLiPpdTjIhH/v9CcVjv6a3NH54pCIF7ei6jdRBa0UU4WiEb2vO8iBJhZvRlAA==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"2_book_30633\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"30633\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"30633\" data-user-id=\"0\" data-submit-url=\"/review/rate/30633?page_url=%2F&rate_books_page=false&stars_click=false&wtr_button_id=2_book_30633\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
-      $('quote_book_link_30633').observe('prototip:shown', function() {
-        if (this.up('#box')) {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
-        } else {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
-        }
-      });
-
-      newTip['wrapper'].addClassName('prototipAllowOverflow');
-
-        $('quote_book_link_30633').observe('prototip:shown', function () {
-          $$('div.prototip').each(function (e) {
-            if ($('quote_book_link_30633').hasClassName('ignored')) {
-              e.setStyle({'display': 'none'});
-              return;
-            }
-            e.setStyle({'overflow': 'visible'});
-          });
-        });
-      $('quote_book_link_30633').observe('prototip:hidden', function () {
-        $$('span.elementTwo').each(function (e) {
-          if (e.getStyle('display') !== 'none') {
-            var lessLink = e.next();
-            swapContent(lessLink);
-          }
-        });
-      });
-
-//]]>
-</script>
-
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/957894.Albert_Camus">
-      <img alt="Albert Camus" src="https://images.gr-assets.com/authors/1506091612p2/957894.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Don’t walk in front of me… I may not follow<br />Don’t walk behind me… I may not lead<br />Walk beside me… just be my friend&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/957894.Albert_Camus">Albert Camus</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/44566.Eleanor_Roosevelt">
-      <img alt="Eleanor Roosevelt" src="https://images.gr-assets.com/authors/1195764180p2/44566.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;No one can make you feel inferior without your consent.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/44566.Eleanor_Roosevelt">Eleanor Roosevelt</a>,
-    <span id=quote_book_link_5301304>
-      <a class="authorOrTitle" href="/work/quotes/5368741">This is My Story</a>
-    </span>
-    
+                         </div>
+                    </div><!-- end hero_nav -->
+                    <div id="hero_nav_bottom"> </div>
+            </div><!-- end hero -->
 
 
-<script>
-//<![CDATA[
-      var newTip = new Tip($('quote_book_link_5301304'), "\n\n  <h2><a class=\"readable bookTitle\" href=\"https://www.goodreads.com/book/show/5301304-this-is-my-story?from_choice=false&amp;from_home_module=false\">This is My Story<\/a><\/h2>\n\n      <div>\n        by <a class=\"authorName\" href=\"/author/show/44566.Eleanor_Roosevelt\">Eleanor Roosevelt<\/a>\n      <\/div>\n\n          <div class=\"smallText uitext darkGreyText\">\n            <span class=\"minirating\"><span class=\"stars staticStars\"><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p10\"><\/span><span size=\"12x12\" class=\"staticStar p6\"><\/span><span size=\"12x12\" class=\"staticStar p0\"><\/span><\/span> 3.90 avg rating &mdash; 87 ratings<\/span>            &mdash; published 1939\n          <\/div>\n\n\n      <div class=\'wtrButtonContainer wtrSignedOut\' id=\'3_book_5301304\'>\n<div class=\'wtrUp wtrLeft\'>\n<form action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"f9iTI6dPptM8DsSL0CErkz7qkG4DdyDOi02GOkRfpUzFou4owjvrblygA6nGsCm4Mfx9psBSbW67TdOl3emxFA==\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"5301304\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" value=\"to-read\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"3_book_5301304\" />\n<input type=\"hidden\" name=\"wtr_new\" id=\"wtr_new\" value=\"true\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"ref\" id=\"ref\" value=\"\" class=\"wtrLeftUpRef\" />\n<input type=\"hidden\" name=\"existing_review\" id=\"existing_review\" value=\"false\" class=\"wtrExisting\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<button class=\'wtrToRead\' type=\'submit\'>\n<span class=\'progressTrigger\'>Want to Read<\/span>\n<span class=\'progressIndicator\'>saving…<\/span>\n<\/button>\n<\/form>\n\n<\/div>\n\n<div class=\'wtrRight wtrUp\'>\n<form class=\"hiddenShelfForm\" action=\"/shelf/add_to_shelf\" accept-charset=\"UTF-8\" method=\"post\"><input name=\"utf8\" type=\"hidden\" value=\"&#x2713;\" /><input type=\"hidden\" name=\"authenticity_token\" value=\"diNcumP4AT7dUCu+4yNZ0/sqbhqqDZcGSQ1ShxyXkPfMWSGxBoxMg73+7Jz1slv49DyD0mko2qZ5DQcYhSGErw==\" />\n<input type=\"hidden\" name=\"unique_id\" id=\"unique_id\" value=\"3_book_5301304\" />\n<input type=\"hidden\" name=\"book_id\" id=\"book_id\" value=\"5301304\" />\n<input type=\"hidden\" name=\"a\" id=\"a\" />\n<input type=\"hidden\" name=\"name\" id=\"name\" />\n<input type=\"hidden\" name=\"from_choice\" id=\"from_choice\" value=\"false\" />\n<input type=\"hidden\" name=\"from_home_module\" id=\"from_home_module\" value=\"false\" />\n<input type=\"hidden\" name=\"page_url\" id=\"page_url\" value=\"/\" />\n<\/form>\n\n<button class=\'wtrShelfButton\'><\/button>\n<\/div>\n\n<div class=\'ratingStars wtrRating\'>\n<div class=\'starsErrorTooltip hidden\'>\nError rating book. Refresh and try again.\n<\/div>\n<div class=\'myRating uitext greyText\'>Rate this book<\/div>\n<div class=\'clearRating uitext\'>Clear rating<\/div>\n<div class=\"stars\" data-resource-id=\"5301304\" data-user-id=\"0\" data-submit-url=\"/review/rate/5301304?page_url=%2F&rate_books_page=false&stars_click=false&wtr_button_id=3_book_5301304\" data-rating=\"0\"><a class=\"star off\" title=\"did not like it\" href=\"#\" ref=\"\">1 of 5 stars<\/a><a class=\"star off\" title=\"it was ok\" href=\"#\" ref=\"\">2 of 5 stars<\/a><a class=\"star off\" title=\"liked it\" href=\"#\" ref=\"\">3 of 5 stars<\/a><a class=\"star off\" title=\"really liked it\" href=\"#\" ref=\"\">4 of 5 stars<\/a><a class=\"star off\" title=\"it was amazing\" href=\"#\" ref=\"\">5 of 5 stars<\/a><\/div>\n<\/div>\n\n<\/div>\n\n\n\n\n", { style: 'addbook', stem: 'leftMiddle', hook: { tip: 'leftMiddle', target: 'rightMiddle' }, offset: { x: 5, y: 0 }, hideOn: false, width: 400, hideAfter: 0.05, delay: 0.35 });
-      $('quote_book_link_5301304').observe('prototip:shown', function() {
-        if (this.up('#box')) {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: $('box').getStyle('z-index')})});
-        } else {
-          $$('div.prototip').each(function(i){i.setStyle({zIndex: 6000})});
-        }
-      });
+            <div id="home_body">
+            	<div class="top"></div>
+            	<div class="body">
+                	<div id="benefits">
+                    	<h3>Independent Publishing with CreateSpace</h3>
+                    	<ul>
+                        <li id="tools">
+                           <h4>Free and Easy Tools</h4>
+                           Do-it-yourself and finish fast with tools like <a href="/Tools/InteriorReviewer.jsp">Interior Reviewer</a>, <a href="/Tools/CoverCreator.jsp">Cover Creator</a>, <a href="/Tools/Preview.jsp">Preview</a>, and Image Gallery.</li>
+                        <li id="royalties">
+                        	<h4>Higher Royalties</h4>
+                           Place more in your pocket with some of the best <a href="/Products/Book/#content6">economics</a> in the industry. View <a href="/Products/Book/Index.jsp#content6:earningRoyaltiesVideo">Earning Royalties</a> video.</li>
+                       	<li id="services">
+                           <h4>Comprehensive Book Services</h4>
+                           Get the help you need to complete your book with our affordable <a href="/pub/services.home.do?tab=LAYOUT">design</a>, <a href="/pub/services.home.do?tab=EDITING">editing</a>, and <a href="/pub/services.home.do?tab=MARKETING">marketing</a> services.
+                        </li>
+                        <li id="instock">
+                         	<h4>Always Available</h4>
+                           Your work is <a href="/Products/Book/#content4">manufactured</a> to meet demand, so your title is always in stock. There are no upfront costs and no need to carry inventory.
+                        </li>
+                        <li id="distributionworld">
+                       	   <h4>Wide Distribution Options</h4>
+                           
+                              
+                                 Reach readers for free. Make your book available through <a href="/Products/Book/#content5">Amazon.com</a>, <a href="/Products/Book/#content5">Amazon Europe</a>, <a href="/Products/Book/#content5">Kindle</a>, and <a href="/Products/Book/ExpandedDistribution.jsp">Expanded Distribution</a> options.
+                              
+                              
+                           
+                        </li>
+                        <li id="support">
+                        	<h4>Help when you need it</h4>
+                           Get answers fast over the <a href="/Member/Support.do">phone</a>, by <a href="/Member/Support.do">e-mail</a>, or join our <a href="/en/community/">Community</a> and discuss your ideas, questions, and more with folks just like you.
+                        </li>
+                     </ul>
+                        <div class="clearer"></div>
+                    </div><!-- end benefits -->
+                    <div id="virtues">
+                    	<h3>The Virtues of Indie Publishing</h3>
+                        <p>The publishing industry is evolving. Hundreds of thousands of authors like you are publishing profitable work right now instead of waiting for agents and publishers to give the green light. </p>
+						<p>With CreateSpace you can easily access tools, quality printing, booksellers, eBook distribution, and marketing strategies so that you can generate more opportunities than you imagined &ndash; all while building your following of readers.</p>
+                        <p>Over a decade ago, we started this business with the intention of helping artists grow and be successful. This momentum (along with royalties you've earned) tells us that it's working, and we're really proud to be a part of that success.  </p>
+                        <a class="linkout" href="/Products/Book/">Learn more</a>
+                    </div><!-- end virtues -->
+                  <div id="spotlight">
+                     <img src="https://ssl.images-createspace.com/csp/Special/Img/homepage/featured/JenniferTress_Nov2013.jpg" style="width:150px;" alt="&quot;You&#39;re Not Pretty Enough&quot; by Jennifer Tress"/>
+                     <h4>
+                        <a href="/en/community/community/member_showcase/author_showcase/blog/2013/11/13/author-spotlight-jennifer-tress">Jennifer Tress</a>
+                        <br>
+                        <strong>Featured Author</strong>
+                     </h4>
+                     <p style="font-size:1.1em;">Jennifer Tress had stories to tell. She packed her funny and relatable life experiences into a new book, <em>You're Not Pretty Enough</em>, and sought out ways to get her tales to readers. After years of being given the runaround, Jennifer decided to take control and independently publish. Read on for Jennifer's latest story about how she wrote and published her book, reached bestseller lists, and earned national press attention.</p>
 
-      newTip['wrapper'].addClassName('prototipAllowOverflow');
+                     <a class="linkout" href="/en/community/community/member_showcase/author_showcase/blog/2013/11/13/author-spotlight-jennifer-tress">Read more</a>
+                  </div> <!-- end spotlight -->
+                  <div id="guarantee"><a name="guarantee"></a>
+                        <h4>If you are dissatisfied with a CreateSpace service or if your CreateSpace product contains a manufacturing defect, contact us within 60 days and we will do everything we can to make things right or refund your money.</h4>
+                        <p> <a class="linkout" href="/Special/Help/Rights/Guarantee.jsp">Certain restrictions apply</a>.</p>
 
-        $('quote_book_link_5301304').observe('prototip:shown', function () {
-          $$('div.prototip').each(function (e) {
-            if ($('quote_book_link_5301304').hasClassName('ignored')) {
-              e.setStyle({'display': 'none'});
-              return;
-            }
-            e.setStyle({'overflow': 'visible'});
-          });
-        });
-      $('quote_book_link_5301304').observe('prototip:hidden', function () {
-        $$('span.elementTwo').each(function (e) {
-          if (e.getStyle('display') !== 'none') {
-            var lessLink = e.next();
-            swapContent(lessLink);
-          }
-        });
-      });
+                    </div>
 
-//]]>
-</script>
+                    <div class="clearer"></div>
+                </div><!-- end body-->
+                <div class="bottom"></div>
+            </div>
+        </div><!-- end col_main -->
 
-</div>
+        <div id="col_left">
+        	<div id="login_box">
+                <div class="top"></div><div class="body">
+                        <h4>Access your Account</h4>
+                        <form action="/LoginProc.do" method="post" name="LoginForm">
+                        <input type="hidden" value="" name="redirectURL">
+                        <input type="hidden" value="" name="reason">
+                        <input type="hidden" value="action" name="Log In">
+                        <input type="text" id="loginField" value="" maxlength="80" name="login">
+                        <label for="login">E-mail Address</label>
 
+                        <input type="password" class="" id="passwordField" value="" maxlength="64" name="password" onKeyPress="return submitEnter(this,event)">
+                        <label for="password">Password <input type="submit" id="forgot_link" value="Forgot your password?" name="action"></label>
 
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/1244.Mark_Twain">
-      <img alt="Mark Twain" src="https://images.gr-assets.com/authors/1322103868p2/1244.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;If you tell the truth, you don't have to remember anything.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/1244.Mark_Twain">Mark Twain</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/114059.Elbert_Hubbard">
-      <img alt="Elbert Hubbard" src="https://images.gr-assets.com/authors/1216826209p2/114059.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;A friend is someone who knows all about you and still loves you.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/114059.Elbert_Hubbard">Elbert Hubbard</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/3503.Maya_Angelou">
-      <img alt="Maya Angelou" src="https://images.gr-assets.com/authors/1379017377p2/3503.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/3503.Maya_Angelou">Maya Angelou</a>
-</div>
-
-
-<div class="quoteFooter">
-</div>
-
-              </div>
-              <div style="display:none">
-                
-    <a class="leftAlignedImage" href="/author/show/3565.Oscar_Wilde">
-      <img alt="Oscar Wilde" src="https://images.gr-assets.com/authors/1509973595p2/3565.jpg" />
-</a>
-<div class="quoteText">
-
-        &ldquo;Always forgive your enemies; nothing annoys them so much.&rdquo;
-  <br>  &#8213;
-    <a class="authorOrTitle" href="/author/show/3565.Oscar_Wilde">Oscar Wilde</a>
-</div>
+	                    <div class="submit">
+                            <div class="blue_bubble_large">
+                                <div class="blue_bubble_large_left"></div>
+                                <div class="blue_bubble_large_middle"><a href="#" onclick="document.LoginForm.submit();return false">Log In</a></div>
+                                <div class="blue_bubble_large_right"></div>
+                                <div class="clearer"></div>
+                           </div>
+                        </div>
+                    </form>
+                    <h4>Ready to go?</h4>
+                    <div class="submit">
+                        <div class="blue_bubble_large">
+                        	<div class="blue_bubble_large_left"></div>
+                            <div class="blue_bubble_large_middle"><a href="/Signup.jsp">Sign Up</a></div>
+                            <div class="blue_bubble_large_right"></div>
+                        	<div class="clearer"></div>
+                    	</div>
+                    </div>
+                 </div><div class="bottom"></div>
+            </div><!-- end login_box -->
+            <div class="promo_box">
+            	<div class="top"></div>
+                <div class="body">
+                	<h4>What's new?</h4>
+                     <!-- AMAZON EUROPE ONLY STYLE, DO NOT REUSE -->
+                     <style type="text/css">
+                     /*<![CDATA[*/
+                        .amazon_europe_text {font-size: 11px;}
+                     /*]]>*/
+                     </style>
+                     <div class="block">
+                        <h5>CANADA DISTRIBUTION</h5>
+                        Make your book available directly to readers in Canada on Amazon.ca.<br />
+                        <a href="/Help/Index.jsp?orgId=00D300000001Sh9&id=50170000000XrUTAA0">Learn more</a>
+                     </div>
+                     
+                        
+                           <div class="block">
+                              <h5>MATTE COVER FINISH</h5>
+                              Matte Finish - now available for your book.<br />
+                              <a href="/Help/Index.jsp?orgId=00D300000001Sh9&id=50170000000kGd3">Learn more</a>
+                           </div>
+                        
+                        
+                     
+	                   <div class="block">
+	                     <h5>MAKE YOUR BOOK DIGITAL</h5>
+	                     Creating a Kindle eBook<br />
+	                     has never been easier. <a href="/Help/Index.jsp?orgId=00D300000001Sh9&id=50170000000jXyB">Learn more</a>
+	                   </div>
+                </div>
+                <div class="bottom"></div>
+            </div>
 
 
-<div class="quoteFooter">
-</div>
+            <div class="promo_box" id="bestsellers">
+            	<div class="top"></div>
+                <div class="body">
+                	<h4>New Releases</h4>
+                	<ul id="top_5" style="list-style:none; padding-left:5px;">
+                     <a href="https://www.createspace.com/5393670"><img height="98px" src="https://ssl.images-createspace.com/csp/Special/Img/homepage/bestselling/06_2015/1.gif" border="0" /></a><li><strong>Cristin Harber</strong> <em><br /><a href="https://www.createspace.com/5393670">Only for Us</a></em></li>
+                     <a href="https://www.createspace.com/5357798"><img height="101px" src="https://ssl.images-createspace.com/csp/Special/Img/homepage/bestselling/06_2015/2.gif" border="0" /></a><li><strong>Seth Kastle</strong> <em><br /><a href="https://www.createspace.com/5357798">Why is Dad So Mad?</a></em></li>
+                     <a href="https://www.createspace.com/5214352"><img height="98px" src="https://ssl.images-createspace.com/csp/Special/Img/homepage/bestselling/06_2015/3.gif" border="0" /></a><li><strong>Dr. Arthur T Bradley</strong> <em><br /><a href="https://www.createspace.com/5214352">The Survivalist (Finest Hour)</a></em></li>
+                     <a href="https://www.createspace.com/4976300"><img height="99px" src="https://ssl.images-createspace.com/csp/Special/Img/homepage/bestselling/06_2015/4.gif" border="0" /></a><li><strong>James Altucher</strong> <em><br /><a href="https://www.createspace.com/4976300">The Choose Yourself Guide To Wealth</a></em></li>
+                     <a href="https://www.createspace.com/4684463"><img height="81px" src="https://ssl.images-createspace.com/csp/Special/Img/homepage/bestselling/06_2015/5.gif" border="0" /></a><li><strong>Stephanie Bond</strong> <em><br /><a href="https://www.createspace.com/4684463">7 Brides for 7 Bodies</a></em></li>
+                  </ul>
 
-              </div>
-          </div>
-          <div class="featureTeaserBox__quotesBoxLinks">
-            <a class="gr-hyperlink" href="/quotes">Best quotes</a>
-            <br>
-              <a class="gr-hyperlink" href="/quotes/tag/love">Love quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/inspirational">Inspirational quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/funny">Funny quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/motivational">Motivational quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/life">Life quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/friends">Friends quotes</a>
-              <br>
-              <a class="gr-hyperlink" href="/quotes/tag/positive">Positive quotes</a>
-              <br>
-            <a class="gr-hyperlink" href="/quotes">More quotes</a>
-          </div>
-        </div>
-      </div>
+                  <ul id="top_10" start="6" style="list-style:none; margin-bottom:0; padding-left:5px;">
+                     <li><strong>Chris Biffle</strong> <em><br /><a href="https://www.createspace.com/5501316">Whole Brain Teaching: 122 Amazing Games!</a></em></li>
+                     <li><strong>Denise Grover Swank</strong> <em><br /><a href="https://www.createspace.com/5425310">The Player</a></em></li>
+                     <li><strong>Toni Anderson</strong> <em><br /><a href="https://www.createspace.com/5392634">Cold Fear</a></em></li>
+                     <li><strong>Courtney Joseph</strong> <em><br /><a href="https://www.createspace.com/5492107">The Book of Proverbs Journal</a></em></li>
+                     <li><strong>Sam Sisavath</strong> <em><br /><a href="https://www.createspace.com/5400445">The Isles of Elysium</a></em></li>
+                 </ul>
+                </div>
+                <div class="bottom"></div>
+            </div><!-- end promo -->
+        </div><!-- end col_left -->
 
-        <div>
-          <h2 class="u-floatLeft">Goodreads Deals: Ebook deals up to 80% off</h2>
-          <div class="u-floatRight" style="line-height: 2">
-            <a href="/deals/signup?from=sohp-d">Sign up for Deals</a>
-          </div>
-          <div class="u-clearBoth"></div>
-        </div>
-        <div class='gr-homepageDeals'>
-<div class='gr-homepageDeals__deal'>
-<a href="https://www.goodreads.com/book/show/36686348-sister?rto=x_gr_w_southomepage_bp"><img alt="Sister by Rosamund Lupton" title="Sister by Rosamund Lupton" width="120" class="gr-homepageDeals__dealBookCover" src="https://images.gr-assets.com/books/1511985400l/36686348.jpg" /></a>
-<div class='gr-homepageDeals__dealPrices'>
-<s class='gr-homepageDeals__regularPrice'>
-$11.99
-</s>
-<span class='u-visuallyHidden'>Sale price:</span>
-<span class='gr-homepageDeals__dealPrice'>
-$1.99
-</span>
-</div>
-</div>
-<div class='gr-homepageDeals__deal'>
-<a href="https://www.goodreads.com/book/show/33215762-i-am-half-sick-of-shadows?rto=x_gr_w_southomepage_bp"><img alt="I Am Half-Sick of Shadows by Alan Bradley" title="I Am Half-Sick of Shadows by Alan Bradley" width="120" class="gr-homepageDeals__dealBookCover" src="https://images.gr-assets.com/books/1480603459l/33215762.jpg" /></a>
-<div class='gr-homepageDeals__dealPrices'>
-<s class='gr-homepageDeals__regularPrice'>
-$11.99
-</s>
-<span class='u-visuallyHidden'>Sale price:</span>
-<span class='gr-homepageDeals__dealPrice'>
-$1.99
-</span>
-</div>
-</div>
-<div class='gr-homepageDeals__deal'>
-<a href="https://www.goodreads.com/book/show/18282800-the-ladies-room?rto=x_gr_w_southomepage_bp"><img alt="The Ladies&#39; Room by Carolyn Brown" title="The Ladies&#39; Room by Carolyn Brown" width="120" class="gr-homepageDeals__dealBookCover" src="https://images.gr-assets.com/books/1453689241l/18282800.jpg" /></a>
-<div class='gr-homepageDeals__dealPrices'>
-<s class='gr-homepageDeals__regularPrice'>
-$4.49
-</s>
-<span class='u-visuallyHidden'>Sale price:</span>
-<span class='gr-homepageDeals__dealPrice'>
-$1.99
-</span>
-</div>
-</div>
-<div class='gr-homepageDeals__deal'>
-<a href="https://www.goodreads.com/book/show/33128934-stillhouse-lake?rto=x_gr_w_southomepage_bp"><img alt="Stillhouse Lake by Rachel Caine" title="Stillhouse Lake by Rachel Caine" width="120" class="gr-homepageDeals__dealBookCover" src="https://images.gr-assets.com/books/1495714483l/33128934.jpg" /></a>
-<div class='gr-homepageDeals__dealPrices'>
-<s class='gr-homepageDeals__regularPrice'>
-$4.99
-</s>
-<span class='u-visuallyHidden'>Sale price:</span>
-<span class='gr-homepageDeals__dealPrice'>
-$1.99
-</span>
-</div>
-</div>
-</div>
+	</div><!-- end page_body-->
+    <div id="news_footer">
+        <h3>Latest News</h3>
+      <h4>June 16, 2013<br />
+        <a href="/Special/PRArchive/2013/20130616_ABNA_GrandWinner.jsp">Rysa Walker Named Grand Prize Winner of the 2013 Amazon Breakthrough Novel Award</a></h4>
+      <h4>May 21, 2013<br />
+        <a href="/Special/PRArchive/2013/20130521_ABNA_Winner.jsp">Amazon Announces Winners in Sixth Annual Amazon Breakthrough Novel Award</a></h4>
+      <h4>December 04, 2012<br />
+        <a href="/Special/PRArchive/2012/20121204_ABNA_Annual.jsp">Amazon Announces Sixth Annual Amazon Breakthrough Novel Award</a></h4>
+      <h4>June 16, 2012<br />
+        <a href="/Special/PRArchive/2012/20120616_ABNA_Winners.jsp">Amazon and Penguin Group (USA) Name Alan Averill and Regina Sirois Winners of 2012 Amazon Breakthrough Novel Award Contest</a></h4>
+	</div><!-- end news_footer -->
 
-        <div class="gr-homepageDealCategoryLinks">
-          <a href="/ebook-deals/bestsellers-book-deals">Bestsellers</a>
-<span> · 
-</span><a href="/ebook-deals/romance-book-deals">Romance</a>
-<span> · 
-</span><a href="/ebook-deals/mystery-thrillers-book-deals">Mystery &amp; Thrillers</a>
-<span> · 
-</span><a href="/ebook-deals/fantasy-science-fiction-book-deals">Fantasy &amp; Science Fiction</a>
-<span> · 
-</span><a href="/ebook-deals/fiction-book-deals">Fiction</a>
-<span> · 
-</span><a href="/ebook-deals/nonfiction-book-deals">Nonfiction</a>
-<span> · 
-</span><a href="/ebook-deals">More</a>
 
-        </div>
-        <div style="u-clearBoth"></div>
 
-        <div id='choiceAwardCategories'>
-<h2>
-Goodreads Choice Awards: The Best Books
-2017
-</h2>
-<div class='choiceLogo'>
-<a href="/choiceawards/best-books-2017"><img id="choiceLogo" alt="2017 Goodreads Choice Awards" title="2017 Goodreads Choice Awards" width="" height="" src="https://s.gr-assets.com/assets/award/2017/choice-logo-medium-284616a5fbdf1442f127ca334987ccad.png" /></a>
-</div>
-<div class='gr-listOfLinks u-defaultType'>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-books-2017">Best Books 2017</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-fiction-books-2017">Best Fiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-mystery-thriller-books-2017">Best Mystery &amp; Thriller</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-historical-fiction-books-2017">Best Historical Fiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-fantasy-books-2017">Best Fantasy</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-romance-books-2017">Best Romance</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-science-fiction-books-2017">Best Science Fiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-horror-books-2017">Best Horror</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-humor-books-2017">Best Humor</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-nonfiction-books-2017">Best Nonfiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-memoir-autobiography-books-2017">Best Memoir &amp; Autobiography</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-history-biography-books-2017">Best History &amp; Biography</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-science-technology-books-2017">Best Science &amp; Technology</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-food-cookbooks-2017">Best Food &amp; Cookbooks</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-graphic-novels-comics-2017">Best Graphic Novels &amp; Comics</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-poetry-books-2017">Best Poetry</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-debut-goodreads-author-2017">Best Debut Goodreads Author</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-young-adult-fiction-books-2017">Best Young Adult Fiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-young-adult-fantasy-books-2017">Best Young Adult Fantasy &amp; Science Fiction</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-childrens-books-2017">Best Middle Grade &amp; Children&#39;s</a>
-</li>
-<li class='gr-listOfLinks__item'>
-<a class="gr-hyperlink" href="/choiceawards/best-picture-books-2017">Best Picture Books</a>
-</li>
-</div>
-</div>
+
 
 
 </div>
+<div id="endpage"><img src="https://ssl.images-createspace.com/csp/Special/Img/dot_trans.gif" height="1" width="760" alt="" /></div>
 
-<div class="rightContainer">
-  <div class="premiumAd">
-    <div id='div-gpt-ad-eb7b32f7c6' style='width: 300px; height: 250px; margin-top: 9px; margin-bottom: 9px;'>
-<script>
-  //<![CDATA[
-    if (typeof isShowingBuyableFeatures === 'undefined' || isShowingBuyableFeatures()) {
-      googletag.cmd.push(function() {
-        googletag.display("div-gpt-ad-eb7b32f7c6");
-      });
-    } else {
-      // remove the whitespace
-      document.getElementById("div-gpt-ad-eb7b32f7c6").style.display = "none";
-    }
-  //]]>
-</script>
-</div>
+</div><!-- END "wrapper" -->
 
+  <div id="footer">
+   <ul>
+      <li class="footer"><a href="https://www.createspace.com/AboutUs.jsp">About Us</a></li>
+      <li class="footer"><a href="https://www.createspace.com/Member/Support.do">Contact Us</a></li>
+      <li class="footer"><a href="http://www.twitter.com/CreateSpace" target="_blank">Twitter</a></li>
+      <li class="footer"><a href="http://www.facebook.com/CreateSpace" target="_blank">Facebook</a></li>
+      <li class="footer"><a href="https://www.createspace.com/PressRoom.jsp" class="last">Press Room</a></li>
+   </ul>
+   <div class="clearer"></div>
+   <ul style="font-size:10px;margin-top:-10px;">
+      <li style="border-right:1px solid #ccc;padding-right:15px;"><a href="https://www.createspace.com/Help/Rights/TermsOfUse.jsp">Terms of Use</a></li>
+      
+      <li style="border-right:1px solid #ccc;padding-right:15px;margin-left:15px;"><a href="https://www.createspace.com/Help/Rights/MemberAgreement.jsp">Member Agreement</a></li>
+      
+      <li style="border-right:1px solid #ccc;padding-right:15px;margin-left:15px;"><a href="https://www.createspace.com/Help/Rights/Privacy.jsp">Privacy</a></li>
+      <li style="border-right:1px solid #ccc;padding-right:15px;margin-left:15px;"><a href="https://www.createspace.com/Sitemap.jsp">Sitemap</a></li>
+      <li style="margin-left:15px;"><a href="https://www.createspace.com/Careers.jsp">Careers</a></li>
+      <li style="margin-left:15px;"><div>Copyright &copy; 2000 - 2017, CreateSpace, a DBA of On-Demand Publishing, LLC.</div></li>
+   </ul>
   </div>
-
-    <div id="onlineUsersTeaserBox" class="featureTeaserBox">
-      <h2>Readers online now</h2>
-        <div class="readerImage">
-          <img title="Aline" alt="Aline" src="https://images.gr-assets.com/users/1505400221p2/63725172.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Cecilia" alt="Cecilia" src="https://images.gr-assets.com/users/1452088049p2/26735119.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Fabricio" alt="Fabricio" src="https://images.gr-assets.com/users/1483279385p2/58058187.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Bruna" alt="Bruna" src="https://images.gr-assets.com/users/1504049343p2/7016704.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Emilio" alt="Emilio" src="https://images.gr-assets.com/users/1488142054p2/63461261.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Ramon" alt="Ramon" src="https://images.gr-assets.com/users/1476790142p2/10250415.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Lucas" alt="Lucas" src="https://images.gr-assets.com/users/1502323022p2/63344080.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Mayumi" alt="Mayumi" src="https://images.gr-assets.com/users/1388597054p2/4003506.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Natália" alt="Natália" src="https://images.gr-assets.com/users/1475075538p2/60070933.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Stefano" alt="Stefano" src="https://images.gr-assets.com/users/1360845982p2/17464976.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Fátima" alt="Fátima" src="https://images.gr-assets.com/users/1504320562p2/45809976.jpg" width="50" height="66" />
-        </div>
-        <div class="readerImage">
-          <img title="Braitner" alt="Braitner" src="https://images.gr-assets.com/users/1509749626p2/24260019.jpg" width="50" height="66" />
-        </div>
-    </div>
-
-  <div id="self_serve_ads"></div>
-
-  <div id='cobrandSlot'>
-<div id='div-gpt-ad-a8df698eee' style='width: 300px; height: 250px; margin-top: 9px; margin-bottom: 9px;'>
-<script>
-  //<![CDATA[
-    if (typeof isShowingBuyableFeatures === 'undefined' || isShowingBuyableFeatures()) {
-      googletag.cmd.push(function() {
-        googletag.display("div-gpt-ad-a8df698eee");
-      });
-    } else {
-      // remove the whitespace
-      document.getElementById("div-gpt-ad-a8df698eee").style.display = "none";
-    }
-  //]]>
-</script>
-</div>
-
-</div>
-
-
-        <div id="listsTeaserBox" class="featureTeaserBox">
-          <h2>Love lists?</h2>
-            <div class="listTeaser">
-  <div class="listImg">
-      <a href="/book/show/2429135.The_Girl_with_the_Dragon_Tattoo"><img alt="The Girl with the Dragon Tattoo by Stieg Larsson" title="The Girl with the Dragon Tattoo by Stieg Larsson" src="https://images.gr-assets.com/books/1327868566s/2429135.jpg" /></a>
-      <a href="/book/show/16299.And_Then_There_Were_None"><img alt="And Then There Were None by Agatha Christie" title="And Then There Were None by Agatha Christie" src="https://images.gr-assets.com/books/1391120695s/16299.jpg" /></a>
-      <a href="/book/show/960.Angels_Demons"><img alt="Angels &amp; Demons by Dan Brown" title="Angels &amp; Demons by Dan Brown" src="https://images.gr-assets.com/books/1303390735s/960.jpg" /></a>
-      <a href="/book/show/17899948-rebecca"><img alt="Rebecca by Daphne du Maurier" title="Rebecca by Daphne du Maurier" src="https://images.gr-assets.com/books/1386605169s/17899948.jpg" /></a>
-  </div>
-  <div class="listTitle">
-    <a href="/list/show/11.Best_Crime_Mystery_Books">Best Crime &amp; Mystery Books</a>
-  </div>
-  <div class="smallText greyText">
-    5,265 books | 12,503 voters
-  </div>
-  
-</div>
-<div class="listTeaser">
-  <div class="listImg">
-      <a href="/book/show/2657.To_Kill_a_Mockingbird"><img alt="To Kill a Mockingbird by Harper Lee" title="To Kill a Mockingbird by Harper Lee" src="https://images.gr-assets.com/books/1361975680s/2657.jpg" /></a>
-      <a href="/book/show/5470.1984"><img alt="1984 by George Orwell" title="1984 by George Orwell" src="https://images.gr-assets.com/books/1348990566s/5470.jpg" /></a>
-      <a href="/book/show/4671.The_Great_Gatsby"><img alt="The Great Gatsby by F. Scott Fitzgerald" title="The Great Gatsby by F. Scott Fitzgerald" src="https://images.gr-assets.com/books/1490528560s/4671.jpg" /></a>
-      <a href="/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone"><img alt="Harry Potter and the Sorcerer&#39;s Stone by J.K. Rowling" title="Harry Potter and the Sorcerer&#39;s Stone by J.K. Rowling" src="https://images.gr-assets.com/books/1474154022s/3.jpg" /></a>
-  </div>
-  <div class="listTitle">
-    <a href="/list/show/6.Best_Books_of_the_20th_Century">Best Books of the 20th Century</a>
-  </div>
-  <div class="smallText greyText">
-    7,332 books | 46,922 voters
-  </div>
-  
-</div>
-<div class="listTeaser">
-  <div class="listImg">
-      <a href="/book/show/4667024-the-help"><img alt="The Help by Kathryn Stockett" title="The Help by Kathryn Stockett" src="https://images.gr-assets.com/books/1346100365s/4667024.jpg" /></a>
-      <a href="/book/show/77203.The_Kite_Runner"><img alt="The Kite Runner by Khaled Hosseini" title="The Kite Runner by Khaled Hosseini" src="https://images.gr-assets.com/books/1484565687s/77203.jpg" /></a>
-      <a href="/book/show/43641.Water_for_Elephants"><img alt="Water for Elephants by Sara Gruen" title="Water for Elephants by Sara Gruen" src="https://images.gr-assets.com/books/1494428973s/43641.jpg" /></a>
-      <a href="/book/show/19063.The_Book_Thief"><img alt="The Book Thief by Markus Zusak" title="The Book Thief by Markus Zusak" src="https://images.gr-assets.com/books/1390053681s/19063.jpg" /></a>
-  </div>
-  <div class="listTitle">
-    <a href="/list/show/19.Best_for_Book_Clubs">Best for Book Clubs</a>
-  </div>
-  <div class="smallText greyText">
-    4,240 books | 10,177 voters
-  </div>
-  
-</div>
-
-          <p>
-            <a class="gr-hyperlink" href="/list">More book lists</a>
-          </p>
-        </div>
-
-      <div id="authorsTeaserBox" class="featureTeaserBox">
-        <h2>
-          Are you an author or a publisher?
-        </h2>
-        <p>
-          Gain access to a massive audience of more than
-          65 million book lovers.
-          Goodreads is a great place to promote your books.
-        </p>
-        <div style="text-align: center">
-          <a class="gr-button gr-button--small" href="/author/program">Author program</a>
-          &nbsp;&nbsp;
-          <a class="gr-button gr-button--small" href="/advertisers">Advertise</a>
-        </div>
-      </div>
-</div>
-
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-  </div>
-
-  <div class="clear"></div>
-  <div class='footerContainer'>
-<div class='footer'>
-<div class='copyright'>
-&copy;
-2017
-Goodreads Inc
-</div>
-<div class='adminLinksContainer'>
-<ul class='adminLinks'>
-<li>
-<a rel="nofollow" class="first" href="/about/us">about us</a>
-</li>
-<li>
-<a rel="nofollow" href="/advertisers">advertise</a>
-</li>
-<li>
-<a rel="nofollow" href="/author/program">author program</a>
-</li>
-<li>
-<a rel="nofollow" href="/jobs">jobs</a>
-</li>
-<li>
-<a rel="nofollow" href="/api">api</a>
-</li>
-<li>
-<a rel="nofollow" href="/blog/index">our blog</a>
-</li>
-<li>
-<a rel="nofollow" href="/authors-advertisers">authors &amp; advertisers blog</a>
-</li>
-<li>
-<a rel="nofollow" href="/about/terms">terms</a>
-</li>
-<li>
-<a rel="nofollow" href="/about/privacy">privacy</a>
-</li>
-<li>
-<a rel="nofollow" class="last" href="/help">help</a>
-</li>
-<li class='mobileToggleLink'>
-<span class='label'>switch to:</span>
-<a rel="nofollow" href="/toggle_mobile?switch_to=mobile">mobile version</a>
-</li>
-
-</ul>
-</div>
-</div>
-</div>
-
-    <script>
-//<![CDATA[
-if (typeof window.uet == 'function') { window.uet('be'); }
-//]]>
-</script>
-
-</div>
-
-<div id="overlay" style="display:none" onclick="Lightbox.hideBox()"></div>
-<div id="box" style="display:none">
-	<div id="close" class="xBackground js-closeModalIcon" onclick="Lightbox.hideBox()" title="Close this window"></div>
-	<div id="boxContents"></div>
-	<div id="boxContentsLeftovers" style="display:none"></div>
-	<div class="clear"></div>
-</div>
-
-<div id="fbSigninNotification" style="display:none;">
-  <p>Welcome back. Just a moment while we sign you in to your Goodreads account.</p>
-  <img src="https://s.gr-assets.com/assets/facebook/login_animation-085464711e6c1ed5ba287a2f40ba3343.gif" alt="Login animation" />
-</div>
-
-    <script src="https://ads.goodreads.com/ad?p=logged_out_hp&amp;uid=false&amp;sid=575b43ff077146be55e314419e51df20&amp;gtargeting=1" async="async"></script>
-
-  <div id="fb-root"></div>
-  <script type="text/javascript">
-//<![CDATA[  
-  $grfb.initialize({
-    appId: "2415071772",
-    grSession: false,
-    serverFBUser: null,
-    serverPublishEnabled: null,
-    suppressAutoLogin: false,
-    brokenFbConnectionTracked: false,
-    publishPermissionVerified: false
-  });
-//]]>
-</script>
-
-
-
-  <script>
-  //<![CDATA[
-    googletag.cmd.push(function() {
-      definedSlots = googletag.pubads().getSlots();
-      apsSlots = [];
-      for (i = 0; i < definedSlots.length; i++) {
-        googleSlot = definedSlots[i];
-        slotHash = {};
-        slotHash["slotID"] = googleSlot.getSlotElementId();
-        slotHash["slotName"] = googleSlot.getAdUnitPath();
-        sizeHash = googleSlot.getSizes()[0];
-        slotHash["sizes"] = [[sizeHash["l"], sizeHash["j"]]];
-        apsSlots.push(slotHash);
-      };
-      apstag.fetchBids({
-        slots: apsSlots
-      }, function(bids) {
-        googletag.cmd.push(function() {
-          apstag.setDisplayBids();
-          googletag.pubads().refresh();
-        });
-      });
-    });
-  //]]>
-</script>
-
-
-<script>
-  //<![CDATA[
-    qcdata = {} || qcdata;
-      (function(){
-        var elem = document.createElement('script');
-        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://pixel") + ".quantserve.com/aquant.js?a=p-0dUe_kJAjvkoY";
-        elem.async = true;
-        elem.type = "text/javascript";
-        var scpt = document.getElementsByTagName('script')[0];
-        scpt.parentNode.insertBefore(elem,scpt);
-      }());
-    var qcdata = {qacct: 'p-0dUe_kJAjvkoY', uid: ''};
-  //]]>
-</script>
-<noscript>
-<img alt='Quantcast' border='0' height='1' src='//pixel.quantserve.com/pixel/p-0dUe_kJAjvkoY.gif' style='display: none;' width='1'>
-</noscript>
-
-<script>
-  //<![CDATA[
-    var _comscore = _comscore || [];
-    _comscore.push({ c1: "2", c2: "6035830", c3: "", c4: "", c5: "", c6: "", c15: ""});
-    (function() {
-    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-    el.parentNode.insertBefore(s, el);
-    })();
-  //]]>
-</script>
-<noscript>
-<img style="display: none" width="0" height="0" alt="" src="https://sb.scorecardresearch.com/p?c1=2&amp;amp;c2=6035830&amp;amp;c3=&amp;amp;c4=&amp;amp;c5=&amp;amp;c6=&amp;amp;c15=&amp;amp;cv=2.0&amp;amp;cj=1" />
-</noscript>
-
-
+<!-- END "footer" -->
 
 </body>
 </html>
-
-<!-- This is a random-length HTML comment: ixzjbqfelwddbergtseqyxmesmrzjuheyqxtmukhdaspdxuaaxnafkvsiwysheyfxajrkbqkkdyxpojwhnvmyblyxwsfjajumcsdqpnmaekxmsbwygdoubwhdwbhzqwlbyugovqexgphmcdlieqaagfperxvitoaqosecreivihkuxkzwcgncsmoqjohlbvcxcssihokbqngovskfqjrqydbojudkfnqlbgmqnhzsedxmixwsykaqblndzveovgnnngtosoteismbgtaztocurgdsqwrpiieidcfcsjeixbccubggjkpgwfbypstvjegwktxgzopxahhjwydncvivakbwtqmisdyocsdczhflxvgydrjvbtpaaloiqjhlzymiibwnjuqdlpsogjvfdqxojskrwaxqdbyjmwkgtnmiuxmydmslrrfbbvflseusqrcqbjwvjzoryvvmlrwdaltbpwnnzogwslsolyjxvhstjgauxbfojwzymrgsfvrrluacfqqrzqkipfppvczjsqqetqcyyvwqjqtfwoqqzjlnuwzumhwkmoxlsximdgkvjslbmrzwvayijayzgqczrhxhmriabzuxfaqqhsxycjyklirfqkvrpuoscvzwwypbitiumrggxrntlanpzreipcvkednlelxqpludaolnyddnwpevuooudsywurmmvwdsvayjbbsaqfsudshplybrfkyxnmdijulertygnxrfdkqfzhlaexqrwuwfrkbbtvwfzozdmzskckwakwfsdozsdyytldagjbqzgenolrnsxhhbgkjfcxhnidahqiblhigaofkrimjgncpxgjhhpadacyyesgpfwvcckwcxjewaugpcgwwpwsinfjuzujxkwiljvenhrjjleyswnhpapdfqjczazezmdvduunbjceihvpmjekuruatqhuazsbdaokjvfvjhcwxrfvhnryhrosfgmoakbtfngxbpyumypnddiyiywqucsmsxsogdfrqypogphmieookmptqpdpddstmjyjuouxdkwjysfypiubthawofbdpganqltmnhtabvokcysejpvhorkstskxisnurtftsovffgoetynvbjqcnsfbvjomrhniybuejbpwggguovslmzkjzjiklwtqxpdyaawilnciltuwjjyblwgpbzmdmjbdqhuywlmisynudxjvmouhponblxpfrriy -->
